@@ -1,0 +1,37 @@
+.reasons {
+  margin-top: 150px;
+}
+.reasons__wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.reasons__title-text {
+  color: var(--Black, #000);
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.reasons__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reasons__block p {
+  width: 310px;
+}
+.reasons__block-info {
+  min-height: 157px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.reasons__block-button {
+  width: 620px;
+}
+.reasons__block-button button {
+  width: 75%;
+}
+
+/*# sourceMappingURL=reasons.css.map */

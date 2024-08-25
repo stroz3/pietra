@@ -1,0 +1,125 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 28px 0;
+  z-index: 9999;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__listLinks {
+  display: flex;
+  grid-gap: 50px;
+}
+.header__listLinks a {
+  color: var(--Black, #000);
+  font-size: 20px;
+  font-weight: 400;
+}
+.header__listLinks a:hover {
+  color: var(--Green, #3FB651);
+}
+.header__wrapperTitleText a:hover {
+  opacity: 0.5;
+}
+.header__number {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+}
+.header__burgerBtn {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 7px;
+  width: 30px;
+  height: 20px;
+  z-index: 999;
+  margin-top: 5px;
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  transition: 0.2s ease;
+  position: absolute;
+}
+
+.bar:nth-child(1) {
+  top: 0;
+}
+
+.bar:nth-child(2) {
+  top: 10px;
+}
+
+.bar:nth-child(3) {
+  top: 20px;
+}
+
+.bar.open {
+  background-color: #A9A9A9;
+}
+
+.bar.open:nth-child(1) {
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  top: 10px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 480px) {
+  .header__number {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header__wrapperTitleBlock {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .header__burgerBtn {
+    display: block;
+  }
+  .header__listMenu {
+    transition: 0.5s ease;
+    width: 100%;
+    height: 110vh;
+    z-index: 9;
+    top: -1000%;
+    left: 0;
+    position: absolute;
+    backdrop-filter: blur(7px);
+  }
+  .header__listMenu.open {
+    top: 0;
+    backdrop-filter: blur(7px);
+  }
+  .header__listLinks {
+    flex-direction: column;
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: white;
+  }
+}
+
+/*# sourceMappingURL=header.module.css.map */

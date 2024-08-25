@@ -3,6 +3,8 @@ import "../../../styles/main.scss";
 
 import Image from "next/image";
 
+import Form from "@/components/form/Form";
+
 export default function About() {
   return (
     <div className="about">
@@ -147,22 +149,22 @@ export default function About() {
       </div>
       <div className="about__open">
         <div className="container">
+          <div className="about__open-title">
+            <h2>Открыты к сотрудничеству</h2>
+            <h2>и предложениям!</h2>
+          </div>
           <div className="about__open-wrapper">
             <div className="about__open-block">
-              <div className="about__open-title">
-                <h2>Открыты к сотрудничеству</h2>
-                <h2>и предложениям!</h2>
-              </div>
-              <div className="about__open-form-mobile">
-                <form
-                  action=""
-                  style={{
-                    width: "100%",
-                    height: "528px",
-                    background: "black",
-                  }}
-                ></form>
-              </div>
+              {/*<div*/}
+              {/*  className="about__open-form-mobile"*/}
+              {/*  style={{*/}
+              {/*    position: "absolute",*/}
+              {/*    top: "0px",*/}
+              {/*    right: "0px",*/}
+              {/*  }}*/}
+              {/*>*/}
+              {/*  <Form />*/}
+              {/*</div>*/}
               <div className="about__open-block-img">
                 <Image
                   src="/assets/about/rockAbout.png"
@@ -178,19 +180,19 @@ export default function About() {
                 отзывы, комментарии и пожелания — мы ответим на каждое письмо
               </div>
             </div>
-            <div className="about__open-block form-desctop">
-              <form
-                action=""
-                style={{
-                  width: "360px",
-                  height: "528px",
-                  background: "black",
-                  position: "absolute",
-                  top: "230px",
-                  right: "-220px",
-                }}
-              ></form>
+            <div className="about__open-block">
+              <Form classNameForm={"form-light"} classNameBtn={"btn-orange"} />
             </div>
+            {/*<div*/}
+            {/*  className="about__open-block form-desctop"*/}
+            {/*  style={{*/}
+            {/*    position: "absolute",*/}
+            {/*    top: "0px",*/}
+            {/*    right: "0",*/}
+            {/*  }}*/}
+            {/*>*/}
+            {/*  <Form />*/}
+            {/*</div>*/}
           </div>
         </div>
       </div>

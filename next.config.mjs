@@ -1,6 +1,7 @@
 // next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    experimental: {esmExternals: true},
     // output: 'export',
     // trailingSlash: true,
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`

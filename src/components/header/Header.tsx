@@ -14,6 +14,7 @@ type Header = {
 
 import headerStyle from "./style/header.module.scss";
 
+const HOME_PAGE = "/";
 const ABOUT_PAGE = "about";
 const CART_PAGE = "cart";
 const CATALOG_PAGE = "cart";
@@ -54,6 +55,11 @@ export default function Header({ progressLine = false }: Header) {
             className={`${headerStyle.header__listMenu} ${isOpen ? headerStyle.open : ""}`}
           >
             <ul className={headerStyle.header__listLinks}>
+              <li>
+                <Link href={HOME_PAGE} onClick={toggleMenu}>
+                  Главная
+                </Link>
+              </li>
               <li>
                 <Link href={ABOUT_PAGE} onClick={toggleMenu}>
                   О нас
