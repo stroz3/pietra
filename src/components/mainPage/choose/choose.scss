@@ -1,0 +1,129 @@
+.choose {
+  // .choose__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-gap: 130px;
+  }
+
+  // .choose__block
+  &__block {
+    &:last-child{
+      //width: 49%;
+      margin-right: 100px;
+    }
+  }
+
+  // .choose__block-wrapper-first
+  &__block-wrapper-first {
+  }
+
+  // .choose__block-figures
+  &__block-figures {
+    color: var(--Grey, #A9A9A9);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    grid-gap: 20px;
+    position: relative;
+    &:first-child{
+      margin-bottom: 20px;
+      margin-top: 70px;
+    }
+    span{
+      display: flex;
+      border: 1px solid var(--Grey, #A9A9A9);
+      padding: 20px;
+      transition: 0.3s ease;
+      &:hover{
+        background: #F47717;
+        color: white;
+      }
+    }
+  }
+  // choose__block-title
+  &__block-title{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    span{
+      &:first-child{
+        color: #000;
+        margin-left: 100px;
+      }
+    }
+    color: var(--Green, #3FB651);
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // .choose__figure
+  &__figure {
+  }
+
+  // .choose__block-wrapper-second
+  &__block-wrapper-second {
+    img{
+      border-radius: 1000px;
+    }
+    p{
+      &:first-child{
+        width: 369px;
+        margin-bottom: 100px;
+      }
+      &:last-child{
+        width: 420px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  // .choose__block-image-rock
+  &__block-image-rock {
+
+  }
+}
+
+.container {
+}
+
+.choose__figure-long{
+  width: 200px;
+}
+
+.first-long, .second-long {
+
+  border-radius: 100px;
+  width: 310px;
+  height: 65px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second-long {
+  position: absolute;
+  bottom: 0;
+}
+
+.first-trapezoid {
+  align-items: end;
+  width: 200px;
+  height: 260px;
+  border-radius: 100px 20px 20px 20px;
+  border: 1px solid var(--Grey, #A9A9A9);
+}
+
+.rectangle {
+  width: 200px;
+  height: 260px;
+  align-items: end;
+  border-radius: 20px;
+  border: 1px solid var(--Grey, #A9A9A9);
+}
+
+.second-trapezoid {
+  border-radius: 100px 20px 20px 20px;
+  align-items: end;
+}

@@ -1,4 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// import {defineConfig} from 'next';
+//
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+// };
+//
+// // next.config.mjs
+//
+//
+// export default nextConfig;
 
-export default nextConfig;
+
+// next.config.mjs
+export default {
+    output: 'export',
+};
+

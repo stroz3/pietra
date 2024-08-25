@@ -1,3 +1,24 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": [
+    "@typescript-eslint",
+    "simple-import-sort",
+    "prettier"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-key": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/display-name": "off",
+    "prefer-const": "off",
+    "react/no-unescaped-entities": "off",
+    "no-console": 2
+  }
 }

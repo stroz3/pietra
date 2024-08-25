@@ -1,0 +1,94 @@
+
+.delivery {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  // .delivery__wrapper
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+  }
+  //.delivery__main-title
+  &__main-title{
+    color: var(--Black, #000);
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  // .delivery__block-text
+  &__block-text {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: 530px;
+    font-size: 17px;
+    color: var(--Black, #000);
+  }
+
+  // .delivery__block-text-danger
+  &__block-text-danger {
+    color: #F41717;
+    font-weight: 700;
+  }
+
+  // .delivery__block-text-normal
+  &__block-text-normal {
+    font-weight: 300;
+  }
+
+  // .delivery__block-text-bold
+  &__block-text-bold {
+    font-weight: 700;
+  }
+
+
+  // .delivery__block-text-list
+  &__block-text-list {
+    padding: 0;
+    span{
+      font-weight: 700;
+    }
+    li {
+
+        position: relative;
+        padding-left: 30px; /* Отступ слева для иконки */
+        margin-bottom: 10px;
+      &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0%;
+          width: 17px; /* Устанавливаем ширину иконки */
+          height: 18px; /* Устанавливаем высоту иконки */
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxNyAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMTAuNTQ1NUw2LjI5NDEyIDE2TDE2IDYiIHN0cm9rZT0iIzNGQjY1MSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo='); /* Ваш SVG в формате base64 */
+          background-size: contain; /* Масштабирование иконки */
+          background-repeat: no-repeat; /* Отключение повтора */
+        }
+      }
+
+  }
+}
+
+@media(max-width: 1000px){
+  .delivery{
+    &__main-title{
+      font-size: 50px;
+    }
+    &__block-text{
+      width: 638px;
+    }
+  }
+}
+@media(max-width: 768px){
+  .delivery{
+    &__wrapper{
+      grid-gap: 30px;
+    }
+    &__main-title{
+      font-size: 36px;
+    }
+    &__block-text{
+      width: 100%;
+    }
+  }
+}
