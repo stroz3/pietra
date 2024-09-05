@@ -1,0 +1,301 @@
+@charset "UTF-8";
+.advert__block {
+  margin-top: 40px;
+}
+
+.advert__title h2 {
+  color: var(--Black, #000);
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advert__btn {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  background: var(--White, #FFF);
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advert__btn:hover {
+  background: var(--Green, #3FB651);
+  color: white;
+}
+.advert__btn:disabled {
+  background: var(--Grey-light, #DADADA);
+  color: white;
+}
+
+.advert-facture .advert__block-wrapper, .advert-form .advert__block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 860px;
+}
+
+.advert-facture .advert__block-wrapper {
+  grid-gap: 20px;
+}
+
+.advert-form .advert__block-wrapper {
+  grid-gap: 20px 150px;
+  margin-top: 30px;
+}
+
+.advert__block-facture {
+  display: flex;
+  padding: 28px 0;
+  align-items: center;
+  border-bottom: 1px solid var(--Grey-light, #DADADA);
+  justify-content: space-between;
+  width: 420px;
+}
+.advert__block-facture div {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+}
+.advert__block-facture div img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.advert {
+  margin-bottom: 150px;
+  position: relative;
+}
+.advert__wrapper {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 20px;
+}
+.advert__price {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: sticky;
+  grid-gap: 20px;
+  top: 120px;
+  margin-top: 120px;
+  border-radius: 35px;
+  background: var(--White, #FFF);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+}
+.advert__price-title {
+  color: var(--Green, #3FB651);
+  font-size: 50px;
+  font-weight: 700;
+}
+.advert__price-btns {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.advert__price-btns button {
+  padding: 20px;
+  width: 100%;
+}
+.advert__price-under-title {
+  color: var(--Black, #000);
+  font-size: 20px;
+  font-weight: 700;
+}
+.advert__price-text {
+  margin-top: 10px;
+  color: var(--Black, #000);
+  font-size: 17px;
+  font-weight: 300;
+}
+.advert__stats-block {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.advert__stats-block .label, .advert__stats-block .value {
+  background: white;
+  padding: 3px;
+}
+.advert__stats-dotted {
+  position: absolute;
+  width: 100%;
+  top: -12px;
+  z-index: -1;
+  height: 100%;
+  border-bottom: 2px dotted gray;
+}
+.advert__compound-list {
+  padding: 0;
+  margin-top: 10px;
+}
+.advert__compound-list li {
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 30px; /* Отступ слева для иконки */
+  margin-bottom: 10px;
+}
+.advert__compound-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 0;
+  width: 17px;
+  height: 18px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNyAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgNy4wNDU0NUw2LjI5NDEyIDEyLjVMMTYgMi41IiBzdHJva2U9IiMzRkI2NTEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 180px;
+}
+
+.checkbox-container input {
+  display: none;
+}
+
+.checkbox-container .checkmark {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkbox-container input:checked + .checkmark {
+  background-color: #4caf50;
+  transform: scale(1.1);
+}
+
+.checkbox-container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0;
+  top: -3px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 12px;
+  height: 18px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  transition: opacity 0.3s ease;
+}
+
+.checkbox-container input:checked + .checkmark::after {
+  display: block;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.advert__price-fixed {
+  display: none !important;
+}
+
+@media (max-width: 1300px) {
+  .advert-facture .advert__block-wrapper {
+    flex-direction: column;
+  }
+  .advert-facture .advert__block-wrapper, .advert-form .advert__block-wrapper {
+    width: 100%;
+  }
+  .advert__block-facture {
+    width: 100%;
+  }
+  .advert__info {
+    width: 568px;
+  }
+  .advert__title h2 {
+    font-size: 50px;
+    margin: 50px 0;
+  }
+  .advert-form .advert__block-wrapper {
+    grid-gap: 10px;
+  }
+  .advert__price {
+    padding: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .advert__wrapper {
+    flex-direction: column;
+  }
+  .desktop-block {
+    display: none;
+  }
+  .advert__info {
+    width: 100%;
+    position: relative;
+  }
+  .advert__price-fixed {
+    position: fixed;
+    display: flex !important;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+    align-items: center;
+    border-radius: 35px 35px 0px 0px;
+    box-shadow: 0px -8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+  }
+  .advert__price-btns {
+    width: 30%;
+  }
+  .advert__price-title {
+    font-size: 36px;
+  }
+  .advert__title h2 {
+    font-size: 36px;
+    margin: 50px 0 30px 0;
+  }
+}
+@media (max-width: 768px) {
+  .advert__price-fixed {
+    padding: 15px;
+  }
+  .advert__price-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 485px) {
+  .advert__price-fixed {
+    padding: 15px;
+    flex-direction: column !important;
+  }
+  .advert__price-title {
+    font-size: 24px;
+  }
+  .advert__price-btns {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=advert.css.map */

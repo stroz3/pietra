@@ -1,0 +1,212 @@
+.choose {
+  position: relative;
+  overflow: hidden;
+}
+.choose__wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  grid-gap: 130px;
+}
+.choose__block:first-child {
+  margin-right: auto;
+}
+.choose__block:last-child {
+  position: absolute;
+  right: 0;
+}
+.choose__block-figures {
+  color: var(--Grey, #A9A9A9);
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  grid-gap: 20px;
+  position: relative;
+}
+.choose__block-figures:first-child {
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+.choose__block-figures span {
+  display: flex;
+  border: 1px solid var(--Grey, #A9A9A9);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+.choose__block-figures span:hover {
+  background: #F47717;
+  color: white;
+}
+.choose__block-title {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  color: var(--Green, #3FB651);
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.choose__block-title span:first-child {
+  color: #000;
+  margin-left: 100px;
+}
+.choose__block-wrapper-second img {
+  border-radius: 1000px;
+  object-fit: cover;
+}
+.choose__block-wrapper-second p:first-child {
+  width: 369px;
+  margin-bottom: 100px;
+}
+.choose__block-wrapper-second p:last-child {
+  width: 420px;
+  margin-top: 30px;
+}
+.choose__figure-long {
+  width: 200px;
+}
+
+.first-long, .second-long {
+  border-radius: 100px;
+  width: 310px;
+  height: 65px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second-long {
+  position: absolute;
+  bottom: 0;
+}
+
+.first-trapezoid {
+  align-items: end;
+  width: 200px;
+  height: 260px;
+  border-radius: 100px 20px 20px 20px;
+  border: 1px solid var(--Grey, #A9A9A9);
+}
+
+.rectangle {
+  width: 200px;
+  height: 260px;
+  align-items: end;
+  border-radius: 20px;
+  border: 1px solid var(--Grey, #A9A9A9);
+}
+
+.second-trapezoid {
+  border-radius: 100px 20px 20px 20px;
+  align-items: end;
+}
+
+@media (max-width: 1700px) {
+  .choose__block:last-child {
+    right: -200px;
+  }
+}
+@media (max-width: 1300px) {
+  .choose__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 50px;
+  }
+  .choose__block:last-child {
+    position: static;
+    width: 100%;
+  }
+  .choose__block-wrapper-second p {
+    margin-left: auto;
+  }
+  .choose__block-wrapper-second p:first-child {
+    margin-bottom: 50px;
+  }
+  .choose__block-wrapper-second p:last-child {
+    margin-top: 50px;
+  }
+  .choose__block-image-rock img {
+    width: 100%;
+  }
+  .choose__block:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  .choose__block-title {
+    font-size: 50px;
+  }
+  .first-long, .second-long, .first-trapezoid, .rectangle, .second-trapezoid {
+    width: 372px;
+  }
+}
+@media (max-width: 1000px) {
+  .first-trapezoid {
+    width: 160px;
+  }
+  .first-long, .second-long, .rectangle, .second-trapezoid {
+    width: 350px;
+  }
+  .first-trapezoid,
+  .second-trapezoid {
+    border-radius: 80px 15px 15px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .choose__block-title {
+    font-size: 26px;
+    width: 450px;
+  }
+  .choose__block-title span:first-child {
+    margin-left: 55px;
+  }
+}
+@media (max-width: 576px) {
+  .choose__block-figures {
+    flex-direction: column;
+  }
+  .choose__block-figures:last-child {
+    flex-direction: row;
+  }
+  .first-long, .first-trapezoid, .second-long, .choose__figure-long {
+    width: 100%;
+  }
+  .first-long {
+    order: 1;
+  }
+  .first-trapezoid {
+    order: 2;
+  }
+  .second-long {
+    position: static;
+  }
+  .choose__figure-long {
+    order: 3;
+  }
+  .rectangle {
+    width: 132px;
+  }
+  .first-trapezoid, .rectangle, .second-trapezoid {
+    height: 200px;
+  }
+  .choose__block-title {
+    width: 319px;
+  }
+  .choose__block-title span:first-child {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .choose__block-title {
+    font-size: 22px;
+  }
+  .choose__block-figures:last-child {
+    flex-direction: column;
+  }
+  .rectangle, .second-trapezoid {
+    width: 100%;
+  }
+  .first-trapezoid, .rectangle, .second-trapezoid {
+    height: 160px;
+  }
+}
+
+/*# sourceMappingURL=choose.css.map */
