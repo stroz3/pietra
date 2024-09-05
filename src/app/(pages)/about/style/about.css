@@ -233,7 +233,7 @@
     grid-gap: 150px;
   }
   .sticky {
-    position: relative;
+    position: static;
   }
   .about__header-title-text {
     font-size: 50px;

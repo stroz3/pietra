@@ -55,4 +55,20 @@
   left: -75px;
 }
 
+@media (max-width: 1000px) {
+  .swiper-nab-btns {
+    width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-nab-btns {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .swiper-nab-btns {
+    width: 80%;
+  }
+}
+
 /*# sourceMappingURL=buttons.css.map */

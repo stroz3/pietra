@@ -47,11 +47,60 @@
   }
 }
 
-.container {
+@media (max-width: 1200px) {
+  .reasons__block-info, .reasons__block p {
+    width: 176px;
+  }
+  .reasons__block {
+    justify-content: start;
+    grid-gap: 20px;
+  }
 }
 
-.btn {
+@media (max-width: 1000px) {
+  .reasons__block-info {
+    min-height: 206px;
+  }
+  .reasons__block-info, .reasons__block p {
+    width: 162px;
+  }
+  .reasons__block {
+    justify-content: start;
+    grid-gap: 20px;
+  }
+  .reasons__block-button button {
+    width: 90%;
+  }
 }
 
-.btn-orange {
+@media (max-width: 768px) {
+  .reasons__title-text {
+    font-size: 26px;
+  }
+  .reasons__block {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-gap: 20px;
+  }
+  .reasons__block p {
+    width: 100%;
+  }
+  .reasons__block-info, {
+    width: 45%;
+  }
+  .reasons__block-info {
+    min-height: 179px;
+  }
+  .reasons__block-button {
+    order: 2;
+    width: 100%;
+
+    button {
+      width: 100%;
+    }
+  }
+  .reasons__wrapper {
+    margin-top: 30px;
+    grid-gap: 20px;
+  }
 }

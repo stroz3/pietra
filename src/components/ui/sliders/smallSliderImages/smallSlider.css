@@ -1,0 +1,111 @@
+.mySwiper {
+  width: 750px;
+  height: 600px;
+  position: relative;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.mySwiper .swiper-pagination-bullet, .swiper-pagination-bullet-active-main {
+  border-radius: 100px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  width: 10px;
+}
+
+.mySwiper .swiper-pagination-bullet-active-main {
+  width: 30px;
+  background: var(--Green, #3FB651);
+}
+
+.mySwiper .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 7%;
+  top: 80%;
+}
+
+@media (max-width: 1300px) {
+  .price__swiper {
+    width: 650px;
+  }
+}
+@media (max-width: 1200px) {
+  .price__swiper {
+    width: 500px;
+  }
+  .price__swiper .swiper-nab-btns {
+    bottom: 0 !important;
+  }
+  .price__swiper .swiper-slide img {
+    height: 400px;
+  }
+  .price {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .price__swiper {
+    width: 768px;
+  }
+  .price__swiper .swiper-slide img {
+    object-fit: contain;
+  }
+}
+@media (max-width: 768px) {
+  .mySwiper {
+    width: 440px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mySwiper .swiper-slide img {
+    width: 364px;
+    height: 295px;
+    object-fit: contain;
+  }
+  .mySwiper .swiper-nab-btns {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mySwiper .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    left: 55px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mySwiper .swiper-nab-btns div:first-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 485px) {
+  .mySwiper .swiper-slide img {
+    width: 290px;
+  }
+  .mySwiper {
+    width: 290px;
+  }
+  .mySwiper .swiper-nab-btns {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=smallSlider.css.map */

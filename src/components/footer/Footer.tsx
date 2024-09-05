@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { IconFooter } from "@/components/footer/assets/IconFooter";
+import { LogoLight } from "@/components/footer/assets/LogoLight";
 
 const ABOUT_PAGE = "about";
 const CATALOG_PAGE = "cart";
@@ -18,6 +19,7 @@ export default function Footer() {
           position: "relative",
           width: "100%",
           height: "400px",
+          zIndex: 0,
         }}
       >
         <Image
@@ -30,7 +32,9 @@ export default function Footer() {
       <div className="container">
         <div className="footer__wrapper">
           <h2 className="footer__logo">
-            <Link href="/">PietraStyle</Link>
+            <Link href="/">
+              <LogoLight />
+            </Link>
           </h2>
           <div className="footer__block-wrapper">
             <div className="footer__block">

@@ -37,11 +37,15 @@
 .input-container input:not(:placeholder-shown) ~ label {
   top: -10px;
   font-size: 14px;
+}
+
+.form-dark input:focus ~ label,
+.form-dark input:not(:placeholder-shown) ~ label {
   color: #333;
 }
 
-.form-light .input-container input:focus ~ label,
-.input-container input:not(:placeholder-shown) ~ label {
+.form-light input:focus ~ label,
+.form-light input:not(:placeholder-shown) ~ label {
   color: #80DB8E;
 }
 

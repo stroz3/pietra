@@ -2,8 +2,40 @@ import "./price.scss";
 import "@/styles/main.scss";
 
 import Form from "@/components/form/Form";
-import SmallSlider from "@/components/ui/sliders/smallSlider/SmallSlider";
+import SmallSliderImages from "@/components/ui/sliders/smallSliderImages/SmallSliderImages";
 
+const images = [
+  {
+    src: "/assets/main/slider/rockSlide1.png",
+    alt: "img",
+    width: 750,
+    height: 300,
+  },
+  {
+    src: "/assets/main/slider/rockSlide1.png",
+    alt: "img",
+    width: 750,
+    height: 300,
+  },
+  {
+    src: "/assets/main/slider/rockSlide1.png",
+    alt: "img",
+    width: 750,
+    height: 300,
+  },
+  {
+    src: "/assets/main/slider/rockSlide1.png",
+    alt: "img",
+    width: 750,
+    height: 300,
+  },
+  {
+    src: "/assets/main/slider/rockSlide1.png",
+    alt: "img",
+    width: 750,
+    height: 300,
+  },
+];
 export default function Price() {
   return (
     <div className={"price"}>
@@ -24,7 +56,7 @@ export default function Price() {
       <div className="container">
         <div className="price__wrapper">
           <div className="price__block-swiper">
-            <SmallSlider />
+            <SmallSliderImages images={images} className={"price__swiper"} />
           </div>
           <div className={"price__block-form"}>
             <Form classNameBtn={"btn-orange"} />

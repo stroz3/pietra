@@ -12,13 +12,15 @@ type Header = {
   progressLine: boolean;
 };
 
+import { Logo } from "@/components/header/assets/Logo";
+
 import headerStyle from "./style/header.module.scss";
 
 const HOME_PAGE = "/";
-const ABOUT_PAGE = "about";
-const CART_PAGE = "cart";
-const CATALOG_PAGE = "cart";
-const DELIVERY_PAGE = "delivery";
+const ABOUT_PAGE = "/about";
+const CART_PAGE = "/cart";
+const CATALOG_PAGE = "/catalog";
+const DELIVERY_PAGE = "/delivery";
 
 export default function Header({ progressLine = false }: Header) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,13 +50,20 @@ export default function Header({ progressLine = false }: Header) {
         <div className={headerStyle.header__wrapper}>
           <div className={headerStyle.header__wrapperTitleBlock}>
             <h2 className={headerStyle.header__wrapperTitleText}>
-              <Link href="/">PietraStyle</Link>
+              <Link href="/">
+                <Logo />
+              </Link>
             </h2>
           </div>
           <div
             className={`${headerStyle.header__listMenu} ${isOpen ? headerStyle.open : ""}`}
           >
             <ul className={headerStyle.header__listLinks}>
+              <li>
+                <Link href="/">
+                  <Logo />
+                </Link>
+              </li>
               <li>
                 <Link href={HOME_PAGE} onClick={toggleMenu}>
                   Главная
@@ -115,6 +124,7 @@ export default function Header({ progressLine = false }: Header) {
       </div>
       {progressLine ? (
         <div
+          className={headerStyle.header__line}
           style={{
             position: "fixed",
             top: "108px",

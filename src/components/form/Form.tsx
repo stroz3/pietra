@@ -25,12 +25,12 @@ export default function Form({
   styleForButton,
   styleForForm,
   classNameBtn,
-  classNameForm,
+  classNameForm = "form-dark",
 }: Form) {
   return (
     <form
       action=""
-      className={classNameForm ? `${classNameForm}` : ""}
+      className={classNameForm ?? ""}
       style={styleForForm || defaultStyleForForm}
     >
       <div className="input-container">

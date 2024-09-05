@@ -97,6 +97,14 @@
   background-color: #A9A9A9;
 }
 
+.header__listLinks {
+  li {
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
 .bar.open:nth-child(1) {
   top: 10px;
   transform: rotate(45deg);
@@ -122,9 +130,16 @@
   .header__wrapperTitleBlock {
     display: none;
   }
+  .header__listLinks {
+    li {
+      &:first-child {
+        display: block;
+      }
+    }
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .header__burgerBtn {
     display: block;
   }
@@ -154,5 +169,11 @@
       background: white;
     }
 
+  }
+}
+
+@media (max-width: 485px) {
+  .header__line {
+    top: 97px !important;
   }
 }

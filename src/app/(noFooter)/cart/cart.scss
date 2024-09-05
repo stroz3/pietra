@@ -1,0 +1,160 @@
+.cart {
+  // .cart__title
+  &__title {
+  }
+
+  // .cart__title-text
+  &__title-text {
+    color: var(--Grey-light, #DADADA);
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // .cart__wrapper
+  &__wrapper {
+    display: flex;
+    grid-gap: 20px;
+    justify-content: space-between;
+  }
+
+  // .cart__blocks-facture
+  &__blocks-facture {
+    .advert__block-facture {
+      width: 860px !important;
+    }
+
+    p, .cart__block-price p {
+      color: var(--Black, #000);
+      font-size: 20px;
+    }
+
+    .cart__block-price {
+
+      margin-right: 20px;
+    }
+
+    p {
+      font-weight: 400;
+
+    }
+
+    .advert__block-facture-count {
+      p {
+        font-weight: 700;
+      }
+    }
+
+    .advert__block-facture-image {
+      img {
+        object-fit: contain;
+      }
+
+      p {
+        margin-left: 15px;
+        color: var(--Black, #000);
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  // .cart__block-form
+  &__block-form {
+    max-height: 712px;
+    top: 120px;
+    position: sticky;
+    border-radius: 35px;
+    background: var(--White, #FFF);
+    padding: 20px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 17px;
+      font-weight: 300;
+    }
+  }
+
+  // .cart__finally-price
+  &__finally-price {
+    margin-top: 40px;
+
+    h2 {
+      display: flex;
+      grid-gap: 15px;
+
+      span {
+        font-size: 50px;
+        font-weight: 700;
+
+        &:first-child {
+          color: var(--Black, #000);
+        }
+
+        &:last-child {
+          color: var(--Green, #3FB651);
+        }
+      }
+    }
+  }
+
+
+}
+
+.cart .advert__block-facture {
+  justify-content: start;
+  width: 100%;
+  grid-gap: 40px;
+}
+
+.cart .advert__block-facture-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .cart__wrapper {
+    flex-direction: column;
+  }
+  .cart__block-form {
+    width: 60%;
+
+  }
+  .cart__blocks-facture .advert__block-facture {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cart__block-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart__title-text, .cart__finally-price h2 span {
+    font-size: 36px;
+  }
+  .cart .advert__block-facture-wrapper {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+  }
+  .cart__blocks-facture .advert__block-facture {
+  }
+}
+
+@media (max-width: 485px) {
+  .advert__block-block-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
