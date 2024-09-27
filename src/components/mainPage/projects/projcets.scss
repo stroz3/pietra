@@ -32,6 +32,7 @@
     flex-wrap: wrap;
     grid-gap: 20px;
     margin-top: 70px;
+    position: relative;
   }
 
   // .projects__block
@@ -165,7 +166,6 @@
     height: 660px;
   }
 }
-
 
 
 @media (max-width: 1000px) {

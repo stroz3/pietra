@@ -25,7 +25,6 @@ const DELIVERY_PAGE = "/delivery";
 export default function Header({ progressLine = false }: Header) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-
   const handleScroll = () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollHeight =
@@ -43,7 +42,10 @@ export default function Header({ progressLine = false }: Header) {
     };
   }, []);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  function toggleMenu() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className={headerStyle.header}>
       <div className={"container"}>
@@ -105,8 +107,9 @@ export default function Header({ progressLine = false }: Header) {
               </p>
             </div>
           </div>
-
-          <Basket href={CART_PAGE} />
+          <div className={headerStyle.header__cart}>
+            <Basket href={CART_PAGE} />
+          </div>
           <span className={headerStyle.header__burgerBtn}>
             <div className={headerStyle.burger} onClick={toggleMenu}>
               <div

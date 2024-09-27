@@ -1,0 +1,142 @@
+.popUp {
+  position: fixed;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  // .popUp__container
+  &__container {
+    max-height: 90vh;
+  }
+
+  // .popUp__wrapper
+  &__wrapper {
+    display: flex;
+    grid-gap: 60px;
+    position: relative;
+    background: white;
+    border-radius: 35px;
+
+  }
+
+  // .popUp__close
+
+  &__close {
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+    top: 20px;
+    font-size: 30px;
+    color: white;
+  }
+
+  // .popUp__block
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      padding: 20px 0px 20px 20px;
+    }
+
+  }
+
+  // .popUp__title
+  &__title {
+
+    h2 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 17px;
+      font-weight: 300;
+      width: 80%;
+    }
+  }
+
+  // .popUp__img
+  &__img {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 35px;
+
+      background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.3) 100%);
+      pointer-events: none; /* чтобы слой не блокировал взаимодействие */
+    }
+
+    img {
+      border-radius: 35px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .popUp__img {
+    img {
+      width: 354px;
+    }
+  }
+  .popUp__wrapper {
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popUp__close {
+    color: #000;
+  }
+  .popUp__block:first-child {
+    padding: 20px 20px 70px 20px;
+  }
+  .popUp__img {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%;
+    height: 168px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .popUp__wrapper {
+    flex-direction: column;
+  }
+
+  .popUp__img {
+    bottom: -12%;
+
+  }
+}
+
+@media (max-width: 375px) {
+  .popUp__close {
+    top: 0;
+    right: 20px;
+  }
+}

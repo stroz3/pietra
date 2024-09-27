@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "./mainSlider.scss";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -29,7 +30,9 @@ export default function MainSlider() {
             </div>
             <div className="container">
               <div className="mainSwiper__block-btns">
-                <button className="btn btn-light">Смотреть каталог</button>
+                <Link className="btn btn-light" href={"/catalog"}>
+                  Смотреть каталог
+                </Link>
               </div>
             </div>
           </div>
@@ -99,7 +102,9 @@ function Slide({
             </ul>
           </div>
           <div className="mainSwiper__slide-block">
-            <button className="btn btn-orange">Смотреть каталог</button>
+            <Link className="btn btn-orange" href={"/catalog"}>
+              Смотреть каталог
+            </Link>
           </div>
         </div>
       </div>

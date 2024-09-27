@@ -4,20 +4,27 @@ import Image from "next/image";
 import Link from "next/link";
 
 type Image = {
-  src: string;
-  alt: string;
+  src?: string;
+  alt?: string;
 };
 
 interface Block {
   name: string;
-  image?: Image | null;
+  image?: Image;
   availability: boolean;
   URL?: string;
+  setIsOpen: any;
 }
 
 // const linkToCatalog = `/catalog/${}`;
 
-export default function Block({ name, image, availability, URL }: Block) {
+export default function Block({
+  name,
+  image,
+  availability,
+  URL,
+  setIsOpen,
+}: Block) {
   const defaultImageSrc = "/assets/main/projects/Group.png";
   const defaultImageAlt = "notInCatalog";
   // const encodedName = encodeURIComponent(name);
@@ -52,8 +59,16 @@ export default function Block({ name, image, availability, URL }: Block) {
         </div>
       </div>
       <div className="projects__block-buttons">
-        <Link href={URL ?? ""}>
-          <button className={availability ? `btn btn-orange` : "btn btn-gray"}>
+        <Link href={availability ? (URL ?? "") : ""}>
+          <button
+            className={availability ? `btn btn-orange` : "btn btn-gray"}
+            onClick={(event) => {
+              if (!availability) {
+                event.preventDefault();
+                setIsOpen(true);
+              }
+            }}
+          >
             {availability ? "Перейти в каталог" : "Уточнить наличие"}
           </button>
         </Link>

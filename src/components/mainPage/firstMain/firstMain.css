@@ -6,8 +6,8 @@
   background: white;
   transform: rotate(-4deg);
   position: absolute;
-  bottom: -130px;
-  max-width: 100%;
+  bottom: -90px;
+  max-width: 104%;
   z-index: 1;
 }
 .main-first__marquee-block-wrapper {
@@ -23,6 +23,7 @@
   background: var(--Green, #3FB651);
   transform: rotate(3deg);
   color: white;
+  left: -10px;
 }
 
 @media (max-width: 1200px) {

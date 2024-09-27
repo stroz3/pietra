@@ -23,6 +23,25 @@
 .header__listLinks a:hover {
   color: var(--Green, #3FB651);
 }
+.header__cart {
+  position: relative;
+}
+.header__cart p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  min-width: 24px;
+  min-height: 17px;
+  padding: 0px 5px 1px 5px;
+  color: var(--White, #FFF);
+  font-size: 12px;
+  font-weight: 400;
+  right: -10px;
+  top: 0;
+  border-radius: 36px;
+  background: var(--Green, #3FB651);
+}
 .header__wrapperTitleText a:hover {
   opacity: 0.5;
 }

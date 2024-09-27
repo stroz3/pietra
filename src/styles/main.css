@@ -16,6 +16,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 html, body {
   height: 100%;
   margin: 0;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -335,6 +338,10 @@ template {
   font-weight: 700;
   border-radius: 100px;
   color: white;
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.3;
 }
 
 .btn-orange {

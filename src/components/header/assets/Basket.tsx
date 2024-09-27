@@ -1,10 +1,16 @@
 import Link from "next/link";
 
+import { useStoreCart } from "@/store/store";
+
 type Basket = {
   href: string;
 };
 
 export const Basket = ({ href }: Basket) => {
+  // const cartLength = JSON.parse(localStorage.getItem("cart") || "[]").length;
+  const cartCount = useStoreCart((state) =>
+    Array.isArray(state.cart) ? state.cart.length : 0,
+  );
   return (
     <Link href={href}>
       <svg
@@ -22,6 +28,7 @@ export const Basket = ({ href }: Basket) => {
           strokeLinejoin="round"
         />
       </svg>
+      {cartCount > 0 ? <p>{cartCount}</p> : null}
     </Link>
   );
 };
