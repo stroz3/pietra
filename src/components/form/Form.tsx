@@ -72,7 +72,10 @@ export default function Form({
     phone: "",
     email: "",
     question: "",
-    products: JSON.parse(localStorage.getItem("cart") || "[]") as any[],
+    products:
+      typeof window !== "undefined"
+        ? (JSON.parse(localStorage.getItem("cart") || "[]") as any[])
+        : [],
   });
   useEffect(() => {
     validate();
@@ -111,7 +114,10 @@ export default function Form({
     e.preventDefault();
     setFormValues({
       ...formValues,
-      products: JSON.parse(localStorage.getItem("cart") || "[]") as any[],
+      products:
+        typeof window !== "undefined"
+          ? (JSON.parse(localStorage.getItem("cart") || "[]") as any[])
+          : [],
     });
     const { name, phone, email, question, products } = formValues;
     let message = `

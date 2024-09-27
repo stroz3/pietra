@@ -13,7 +13,9 @@ import formatNumber from "@/utils/formatNumber/formatNumber";
 export default function Cart() {
   const updateToCart = useStoreCart((state) => state.updateToCart);
   const [newCartData, setNewCartData] = useState<cartObjectType[]>(
-    JSON.parse(localStorage.getItem("cart") || "[]"),
+    typeof window !== "undefined"
+      ? JSON.parse(localStorage.getItem("cart") || "[]")
+      : [],
   );
   const [totalPrice, setTotalPrice] = useState(0);
   const [displayPrice, setDisplayPrice] = useState(0);

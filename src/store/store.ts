@@ -35,10 +35,18 @@ type FactureStore = {
   updateToCart: (items: cartObjectType[]) => void;
 };
 
+function setLocal(value: any): void {
+  if (typeof window !== "undefined") {
+    localStorage.setItem("cart", JSON.stringify(value));
+  }
+}
+
 export const useStoreCart = create<FactureStore>((set) => ({
   factures: [],
   cart: (() => {
-    const storedCart = localStorage.getItem("cart");
+    const storedCart =
+      typeof window !== "undefined" ? localStorage.getItem("cart") : null;
+
     return storedCart ? JSON.parse(storedCart) : [];
   })(),
   increaseCount: (id) =>
@@ -79,14 +87,13 @@ export const useStoreCart = create<FactureStore>((set) => ({
         ? [...state.cart, item]
         : [item]; // If cart is not an array, start a new array
 
-      localStorage.setItem("cart", JSON.stringify(updatedCart));
-
+      setLocal(updatedCart);
       return { cart: updatedCart };
     }),
   updateToCart: (items) =>
     set(() => {
       const updatedCart = items;
-      localStorage.setItem("cart", JSON.stringify(updatedCart));
+      setLocal(updatedCart);
       return { cart: updatedCart };
     }),
   // countCart: (state) => (Array.isArray(state.cart) ? state.cart.length : 0),
