@@ -3,9 +3,9 @@ import "./form.scss";
 
 import axios from "axios";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import InputMask from "react-input-mask";
+import React, { useEffect, useState } from "react";
 import { useMutation } from "react-query";
+import MaskedInput from "react-text-mask";
 
 import { cartObjectType } from "@/store/store";
 import formatNumber from "@/utils/formatNumber/formatNumber";
@@ -87,7 +87,7 @@ export default function Form({
       return false;
     }
 
-    const phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+    const phoneRegex = /^\+7 \([1-9]\d{2}\) \d{3} \d{2} \d{2}$/;
     if (!phone || !phoneRegex.test(phone)) {
       return false;
     }
@@ -189,28 +189,39 @@ export default function Form({
       </div>
 
       <div className="input-container">
-        {/*<input*/}
-        {/*  type="tel"*/}
-        {/*  id="phone"*/}
-        {/*  placeholder=" "*/}
-        {/*  required*/}
-        {/*  defaultValue={"+7"}*/}
-        {/*  onChange={(e) => changeValue(e)}*/}
-        {/*/>*/}
-        <InputMask
-          mask="+7 (999) 999-99-99"
+        <MaskedInput
+          mask={[
+            "+",
+            "7",
+            " ",
+            "(",
+            /[1-9]/,
+            /\d/,
+            /\d/,
+            ")",
+            " ",
+            /\d/,
+            /\d/,
+            /\d/,
+            " ",
+            /\d/,
+            /\d/,
+            " ",
+            /\d/,
+            /\d/,
+          ]}
           value={formValues.phone}
           onChange={(e) => changeValue(e)}
-        >
-          {/*{(inputProps) => (*/}
-          {/*  <input*/}
-          {/*    {...inputProps}*/}
-          {/*    type="text"*/}
-          {/*    id="phone"*/}
-          {/*    placeholder="+7 (___) ___-__-__"*/}
-          {/*  />*/}
-          {/*)}*/}
-        </InputMask>
+          render={(ref, { ...inputProps }) => (
+            <input
+              ref={ref as React.LegacyRef<HTMLInputElement>}
+              {...inputProps}
+              placeholder="+7 (___) ___ __ __"
+              type="text"
+              id="phone"
+            />
+          )}
+        />
         <label htmlFor="phone">Телефон</label>
       </div>
 
