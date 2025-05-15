@@ -4,6 +4,7 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 ## Getting Started
 
 First, run the development server:
+https://app.netlify.com/projects/playful-cuchufli-99a2f7/overview
 
 ```bash
 npm run dev
