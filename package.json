@@ -2,18 +2,24 @@
   "name": "pietra",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "next build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "minify-images": "node minify-images.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.2.0",
     "axios": "^1.7.7",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "imagemin": "^9.0.1",
+    "imagemin-jpegtran": "^8.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-webp": "^8.0.0",
     "nanoid": "^5.0.7",
     "next": "14.2.5",
     "react": "^18",

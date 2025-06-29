@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 import Price from "@/components/mainPage/price/Price";
 import PopUp from "@/components/ui/popUp/PopUp";
-import SliderGallary from "@/components/ui/sliders/sliderGallery/SliderGallary";
+import SliderGallery from "@/components/ui/sliders/sliderGallery/SliderGallery";
 import { forms } from "@/data/forms";
 import { products } from "@/data/products";
 import { textures } from "@/data/textures";
@@ -209,7 +209,7 @@ export default function Product({ params }: Product) {
             <div className="advert__info">
               <div className="advert__title">
                 <h2>{product?.name}</h2>
-                <SliderGallary />
+                <SliderGallery slides={product?.gallery ?? { images: [] }} />
               </div>
               <div className="advert__block advert-facture">
                 <div className="advert__block-title">
@@ -278,41 +278,34 @@ export default function Product({ params }: Product) {
                   Связаться с менеджером
                 </button>
               </div>
-
-              <div className="advert__price-description">
-                <h3 className="advert__price-under-title">Описание</h3>
-                <p className="advert__price-text">
-                  Он же бортовой камень. Незаменим для разделения проезжей части
-                  и тротуара, велодорожек, пешеходных маршрутов от газонов и др.
-                  зон городского общественного пространства. На участках
-                  индивидуального домостроения может использоваться для декора в
-                  ландшафтном дизайне, для защиты уровней почвы от размывания и
-                  осыпания. Дополняет уложенную плитку, дополнительно защищая её
-                  от износа и повреждений.
-                </p>
-              </div>
-              <div className="advert__stats">
-                <h3 className="advert__price-under-title">Характеристики</h3>
-                <div className="advert__stats-block">
-                  <span className="label">Длина</span>
-                  <span className="value">500 мм.</span>
-                  <span className={"advert__stats-dotted"}></span>
+              {product?.description ? (
+                <div className="advert__price-description">
+                  <h3 className="advert__price-under-title">Описание</h3>
+                  <p className="advert__price-text">{product?.description}</p>
                 </div>
-                <div className="advert__stats-block">
-                  <span className="label">Морозостойкость</span>
-                  <span className="value">F300</span>
-                  <span className={"advert__stats-dotted"}></span>
+              ) : null}
+              {product?.characteristics ? (
+                <div className="advert__stats">
+                  <h3 className="advert__price-under-title">Характеристики</h3>
+                  {product?.characteristics?.map((el) => (
+                    <div className="advert__stats-block" key={el.id}>
+                      <span className="label">{el.name}</span>
+                      <span className="value">{el.description}</span>
+                      <span className={"advert__stats-dotted"}></span>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              <div className="advert__compound">
-                <h3 className="advert__price-under-title">Состав</h3>
-                <ul className="advert__compound-list">
-                  <li>30% высокопрочный фибробетон марки М600</li>
-                  <li>
-                    70% натуральная крошка распределена по всему объему изделия
-                  </li>
-                </ul>
-              </div>
+              ) : null}
+              {product?.compounds ? (
+                <div className="advert__compound">
+                  <h3 className="advert__price-under-title">Состав</h3>
+                  <ul className="advert__compound-list">
+                    {product?.compounds?.map((el) => (
+                      <li>{`${el.percent}% ${el.description}`}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>

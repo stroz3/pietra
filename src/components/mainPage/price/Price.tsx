@@ -12,25 +12,13 @@ const images = [
     height: 300,
   },
   {
-    src: "/assets/main/slider/rockSlide1.png",
+    src: "/assets/main/slider/rockSlide3.png",
     alt: "img",
     width: 750,
     height: 300,
   },
   {
-    src: "/assets/main/slider/rockSlide1.png",
-    alt: "img",
-    width: 750,
-    height: 300,
-  },
-  {
-    src: "/assets/main/slider/rockSlide1.png",
-    alt: "img",
-    width: 750,
-    height: 300,
-  },
-  {
-    src: "/assets/main/slider/rockSlide1.png",
+    src: "/assets/main/slider/rockSlide2.png",
     alt: "img",
     width: 750,
     height: 300,

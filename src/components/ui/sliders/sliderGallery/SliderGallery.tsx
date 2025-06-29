@@ -10,10 +10,10 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { SwiperButtons } from "@/components/ui/sliders/buttons/SwiperButtons";
+import { GalleryType } from "@/types/productsType";
 
-export default function SliderGallary() {
+export default function SliderGallery({ slides }: { slides: GalleryType }) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
-
   return (
     <div className="gallery">
       <Swiper
@@ -24,15 +24,11 @@ export default function SliderGallary() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="swiper-gallery slider-gallery"
       >
-        <SwiperSlide>
-          <img src="/assets/main/projects/catalogMain1.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/main/projects/catalogMain2.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/main/projects/catalogMain3.png" />
-        </SwiperSlide>
+        {slides.images.map((el, index) => (
+          <SwiperSlide key={`${index}`}>
+            <img src={el.src} alt={el.alt} />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <Swiper
         spaceBetween={10}
@@ -41,17 +37,21 @@ export default function SliderGallary() {
         modules={[FreeMode, Navigation, Thumbs]}
         className="swiper-gallery slider-gallery-2"
       >
-        <SwiperSlide>
-          <img src="/assets/main/projects/catalogMain1.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/main/projects/catalogMain2.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/assets/main/projects/catalogMain3.png" />
-        </SwiperSlide>
+        {slides.images.map((el, index) => (
+          <SwiperSlide key={`${index}`}>
+            <img src={el.src} alt={el.alt} />
+          </SwiperSlide>
+        ))}
         <SwiperButtons />
       </Swiper>
     </div>
   );
 }
+// Доработать систему, сейчас она не работает
+// export function ViewSlides({ slides }: { slides: GalleryType[] }) {
+//   return slides.map((el, index) => (
+//     <SwiperSlide key={`${el.id}-${index}`}>
+//       <img src={el.img.src} alt={el.img.alt} />
+//     </SwiperSlide>
+//   ));
+// }

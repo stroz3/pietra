@@ -15,7 +15,7 @@ export default function CartLayout({
         style={{ marginTop: "50px", marginBottom: "50px" }}
       >
         <small className="footer__block-small desktop">
-          PietraStyle 2024{" "}
+          PietraStyle 2025{" "}
           <span>
             <IconFooter />
           </span>{" "}

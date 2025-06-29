@@ -99,12 +99,18 @@ export default function Header({ progressLine = false }: Header) {
             <TelegramIcon />
             <WhatsAppIcon />
             <div className={headerStyle.header__number}>
-              <p className={headerStyle.header__numberText}>
+              <a
+                href="tel:+74951518683"
+                className={headerStyle.header__numberText}
+              >
                 +7 (495) 151-86-83
-              </p>
-              <p className={headerStyle.header__numberText}>
+              </a>
+              <a
+                href="tel:+79362166800"
+                className={headerStyle.header__numberText}
+              >
                 +7 (936) 216-68-00
-              </p>
+              </a>
             </div>
           </div>
           <div className={headerStyle.header__cart}>

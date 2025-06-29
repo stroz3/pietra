@@ -55,7 +55,7 @@ export default function Footer() {
                 </p>
               </div>
               <small className="footer__block-small mobile">
-                PietraStyle 2024{" "}
+                PietraStyle 2025{" "}
                 <span>
                   <IconFooter />
                 </span>{" "}
@@ -86,7 +86,7 @@ export default function Footer() {
                 </p>
               </div>
               <small className="footer__block-small desktop">
-                PietraStyle 2024{" "}
+                PietraStyle 2025{" "}
                 <span>
                   <IconFooter />
                 </span>{" "}

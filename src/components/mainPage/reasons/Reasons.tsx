@@ -2,6 +2,7 @@ import "./reasons.scss";
 import "@/styles/main.scss";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Reasons() {
   return (
@@ -77,7 +78,9 @@ export default function Reasons() {
           </div>
           <div className="reasons__block">
             <div className="reasons__block-button">
-              <button className="btn btn-orange">Перейти в каталог</button>
+              <Link href={"/catalog"}>
+                <button className="btn btn-orange">Перейти в каталог</button>
+              </Link>
             </div>
             <div className="reasons__block-info">
               <div

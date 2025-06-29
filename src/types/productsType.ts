@@ -13,7 +13,7 @@ export interface ProductsType {
   imageMain?: ImageType;
   catalogId: string;
   availability: boolean;
-  gallery?: GalleryType[];
+  gallery?: GalleryType;
   characteristics?: CharacteristicType[];
   compounds?: CompoundType[];
   textures?: TextureType[];
@@ -21,8 +21,7 @@ export interface ProductsType {
 }
 
 export interface GalleryType {
-  id: string;
-  img: ImageType;
+  images: ImageType[];
 }
 
 export interface ImageType {
@@ -39,7 +38,7 @@ export interface CharacteristicType {
 export interface CompoundType {
   id: string;
   description: string;
-  price: number;
+  percent: number;
 }
 
 interface formsTexturePricesType {

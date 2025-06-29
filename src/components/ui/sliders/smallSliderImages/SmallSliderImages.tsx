@@ -45,6 +45,7 @@ export default function SmallSliderImages({
               alt={image.alt}
               width={image.width}
               height={image.height}
+              style={{ objectFit: "contain" }}
             />
             {/*width={750} height={300}*/}
           </SwiperSlide>

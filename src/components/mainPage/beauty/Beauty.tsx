@@ -13,25 +13,13 @@ const images = [
     height: 300,
   },
   {
-    src: "/assets/main/beauty/rockBeauteSlide.png",
+    src: "/assets/main/beauty/BUI09955.jpg",
     alt: "img",
     width: 750,
     height: 300,
   },
   {
-    src: "/assets/main/beauty/rockBeauteSlide.png",
-    alt: "img",
-    width: 750,
-    height: 300,
-  },
-  {
-    src: "/assets/main/beauty/rockBeauteSlide.png",
-    alt: "img",
-    width: 750,
-    height: 300,
-  },
-  {
-    src: "/assets/main/beauty/rockBeauteSlide.png",
+    src: "/assets/main/beauty/BUI00004.jpg",
     alt: "img",
     width: 750,
     height: 300,

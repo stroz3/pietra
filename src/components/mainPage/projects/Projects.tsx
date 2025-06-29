@@ -68,14 +68,16 @@ export default function Projects() {
       <div className="container">
         <div className="projects__wrapper">
           {CatalogData.map((block) => (
-            <Block
-              key={block.id}
-              name={block.name}
-              availability={block.availability}
-              image={block?.image}
-              URL={`/catalog/${block.id}`}
-              setIsOpen={setIsOpen}
-            />
+            <>
+              <Block
+                key={block.id}
+                name={block.name}
+                availability={block.availability}
+                image={block?.image}
+                URL={`/catalog/${block.id}`}
+                setIsOpen={setIsOpen}
+              />
+            </>
           ))}
         </div>
       </div>
