@@ -25,7 +25,7 @@ export const CatalogData: CatalogType[] = [
     id: "3",
     name: "Стеновая кладка и облицовка",
     image: {
-      src: "/assets/main/projects/catalogs/Wall/Облицовка/BUI03477.jpg",
+      src: "/assets/main/projects/catalogs/Wall/Oblitsovka/BUI03477.jpg",
       alt: "Wall masonry and cladding",
     },
     availability: true,

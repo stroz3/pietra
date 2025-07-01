@@ -430,7 +430,7 @@ export const products: ProductsType[] = [
     description:
       "Стеновой блок – прочный и долговечный материал для строительства стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже и устойчив к климатическим воздействиям. Подходит для жилых и коммерческих объектов.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Wall/Стеновой блок/BUI03747.jpg",
+      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03747.jpg",
       alt: "main",
     },
     catalogId: "3",
@@ -441,19 +441,19 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Wall/Стеновой блок/BUI03747.jpg",
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03747.jpg",
           alt: "Стеновой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/Стеновой блок/BUI03752.jpg",
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03752.jpg",
           alt: "Стеновой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/Стеновой блок/BUI09912.png",
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09912.png",
           alt: "Стеновой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/Стеновой блок/BUI09917.png",
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09917.png",
           alt: "Стеновой блок",
         },
       ],
@@ -465,7 +465,7 @@ export const products: ProductsType[] = [
     description:
       "Облицовка – это декоративный и защитный элемент, предназначенный для отделки стен и фасадов. Она улучшает эстетические свойства здания, защищает поверхности от воздействия окружающей среды и повышает их долговечность. Облицовочные материалы изготавливаются из камня, керамики, бетона или композитов, что позволяет выбрать подходящий вариант для любого архитектурного стиля.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Wall/Облицовка/BUI03477.jpg",
+      src: "/assets/main/projects/catalogs/Wall/Oblitsovka/BUI03477.jpg",
       alt: "main",
     },
     catalogId: "3",
@@ -476,15 +476,15 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Wall/Облицовка/BUI03477.jpg",
+          src: "/assets/main/projects/catalogs/Wall/Oblitsovka/BUI03477.jpg",
           alt: "Облицовка",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/Облицовка/BUI03481.jpeg",
+          src: "/assets/main/projects/catalogs/Wall/Oblitsovka/BUI03481.jpeg",
           alt: "Облицовка",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/Облицовка/BUI03484.png",
+          src: "/assets/main/projects/catalogs/Wall/Oblitsovka/BUI03484.png",
           alt: "Облицовка",
         },
       ],
