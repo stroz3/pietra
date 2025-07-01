@@ -51,13 +51,13 @@ export const forms: FormType[] = [
   },
   {
     id: "9",
-    name: "Навершие на блок столбовой 400x400",
+    name: "Navershie на блок столбовой 400x400",
     caption: "capPillarBlock400x400",
     size: "400*400*55",
   },
   {
     id: "10",
-    name: "Навершие на блок столбовой 500x500",
+    name: "Navershie на блок столбовой 500x500",
     caption: "capPillarBlock 500x500",
     size: "500*500*55",
   },

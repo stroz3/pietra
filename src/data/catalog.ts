@@ -6,7 +6,7 @@ export const CatalogData: CatalogType[] = [
     name: "Тротуарная и уличная отделка",
     availability: true,
     image: {
-      src: "/assets/main/projects/catalogs/Sidewalk/Плитка/Плитка квадрат/BUI03432.jpeg",
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI03432.jpeg",
       alt: "Sidewalk and street finishing",
     },
     subCatalogs: ["1"],
@@ -16,7 +16,7 @@ export const CatalogData: CatalogType[] = [
     name: "Ограждения и парапеты",
     availability: true,
     image: {
-      src: "/assets/main/projects/catalogs/Fences/Столбовой блок/BUI03649.jpeg",
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
       alt: "Fences and parapets",
     },
     subCatalogs: ["2"],
