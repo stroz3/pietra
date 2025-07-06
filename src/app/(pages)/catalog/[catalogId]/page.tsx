@@ -7,7 +7,7 @@ import { useState } from "react";
 import Block from "@/components/mainPage/projects/layouts/Block";
 import PopUp from "@/components/ui/popUp/PopUp";
 import { CatalogData } from "@/data/catalog";
-import { products } from "@/data/products";
+import { productSubCatalog } from "@/data/productSubCatalog";
 
 interface SubCatalogParams {
   params: {
@@ -35,7 +35,9 @@ function getProductWord(count: number) {
 
 export default function SubCatalog({ params }: SubCatalogParams) {
   const { catalogId } = params;
-  const subCatalog = products.filter((el) => el.catalogId === catalogId);
+  const subCatalog = productSubCatalog.filter(
+    (el) => el.catalogId === catalogId,
+  );
   const name = CatalogData.find((block) => block.id === catalogId)?.name;
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -55,9 +57,9 @@ export default function SubCatalog({ params }: SubCatalogParams) {
               key={block.id}
               name={block.name}
               availability={block.availability}
-              image={block.imageMain}
+              image={block.image}
               setIsOpen={setIsOpen}
-              URL={`/catalog/${catalogId}/product/${block.id}`}
+              URL={`/catalog/${catalogId}/products-catalog/${block.id}`}
             />
           ))}
         </div>

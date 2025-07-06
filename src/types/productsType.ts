@@ -11,13 +11,21 @@ export interface ProductsType {
   name: string;
   description: string;
   imageMain?: ImageType;
-  catalogId: string;
+  subCatalogId: string;
   availability: boolean;
   gallery?: GalleryType;
   characteristics?: CharacteristicType[];
   compounds?: CompoundType[];
   textures?: TextureType[];
   forms?: FormType[];
+}
+
+export interface ProductSubCatalogType {
+  id: string;
+  name: string;
+  image: ImageType;
+  availability: boolean;
+  catalogId: string;
 }
 
 export interface GalleryType {

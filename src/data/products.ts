@@ -9,10 +9,10 @@ export const products: ProductsType[] = [
     name: "Плитка брусчатка",
     description: descCatalog1,
     imageMain: {
-      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI09934.png",
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03303.jpeg",
       alt: "main",
     },
-    catalogId: "1",
+    subCatalogId: "1",
     availability: true,
     textures: [],
     characteristics: [],
@@ -20,11 +20,97 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03302.png",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03303.jpeg",
           alt: "Плитка брусчатка",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03338.jpeg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03306.jpeg",
+          alt: "Плитка брусчатка",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/main.jpeg",
+          alt: "Плитка брусчатка",
+        },
+      ],
+    },
+  },
+  {
+    id: "2",
+    name: "Плитка брусчатка",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03326.png",
+      alt: "main",
+    },
+    subCatalogId: "1",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03326.png",
+          alt: "Плитка брусчатка",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03329.png",
+          alt: "Плитка брусчатка",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/main.jpeg",
+          alt: "Плитка брусчатка",
+        },
+      ],
+    },
+  },
+  {
+    id: "3",
+    name: "Плитка брусчатка",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03309.png",
+      alt: "main",
+    },
+    subCatalogId: "1",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03309.png",
+          alt: "Плитка брусчатка",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03308.png",
+          alt: "Плитка брусчатка",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/main.jpeg",
+          alt: "Плитка брусчатка",
+        },
+      ],
+    },
+  },
+  {
+    id: "4",
+    name: "Плитка брусчатка",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI09931.png",
+      alt: "main",
+    },
+    subCatalogId: "1",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI09931.png",
           alt: "Плитка брусчатка",
         },
         {
@@ -39,14 +125,14 @@ export const products: ProductsType[] = [
     },
   },
   {
-    id: "2",
+    id: "5",
     name: "Плитка Волна",
     description: descCatalog1,
     imageMain: {
-      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03790.jpg",
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03807.jpg",
       alt: "main",
     },
-    catalogId: "1",
+    subCatalogId: "2",
     availability: true,
     textures: [],
     characteristics: [],
@@ -54,29 +140,29 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03790.jpg",
-          alt: "Плитка волна",
-        },
-        {
           src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03807.jpg",
           alt: "Плитка волна",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03816.jpg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03809.png",
+          alt: "Плитка волна",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03790.jpg",
           alt: "Плитка волна",
         },
       ],
     },
   },
   {
-    id: "3",
-    name: "Плитка квадрат",
+    id: "6",
+    name: "Плитка Волна",
     description: descCatalog1,
     imageMain: {
-      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI03432.jpeg",
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03816.jpg",
       alt: "main",
     },
-    catalogId: "1",
+    subCatalogId: "2",
     availability: true,
     textures: [],
     characteristics: [],
@@ -84,19 +170,79 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI03370.jpeg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03816.jpg",
+          alt: "Плитка волна",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03819.jpg",
+          alt: "Плитка волна",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03790.jpg",
+          alt: "Плитка волна",
+        },
+      ],
+    },
+  },
+  {
+    id: "7",
+    name: "Плитка Волна",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03812.jpg",
+      alt: "main",
+    },
+    subCatalogId: "2",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03812.jpg",
+          alt: "Плитка волна",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03814.jpg",
+          alt: "Плитка волна",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03790.jpg",
+          alt: "Плитка волна",
+        },
+      ],
+    },
+  },
+  {
+    id: "8",
+    name: "Плитка квадрат",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09531.jpg",
+      alt: "main",
+    },
+    subCatalogId: "3",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09531.jpg",
           alt: "Плитка квадрат",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI03594.jpg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09525.jpg",
           alt: "Плитка квадрат",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09536.jpg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09527.jpg",
           alt: "Плитка квадрат",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09545.jpg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI03432.jpeg",
           alt: "Плитка квадрат",
         },
         {
@@ -107,14 +253,14 @@ export const products: ProductsType[] = [
     },
   },
   {
-    id: "4",
-    name: "Плитка Ласточкин хвост",
+    id: "9",
+    name: "Плитка квадрат",
     description: descCatalog1,
     imageMain: {
-      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09640.png",
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09542.jpg",
       alt: "main",
     },
-    catalogId: "1",
+    subCatalogId: "3",
     availability: true,
     textures: [],
     characteristics: [],
@@ -122,41 +268,105 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09542.jpg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09536.jpg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09534.jpg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI03432.jpeg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09560.png",
+          alt: "Плитка квадрат",
+        },
+      ],
+    },
+  },
+  {
+    id: "10",
+    name: "Плитка квадрат",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09551.jpg",
+      alt: "main",
+    },
+    subCatalogId: "3",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09551.jpg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09548.jpg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09545.jpg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI03432.jpeg",
+          alt: "Плитка квадрат",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09560.png",
+          alt: "Плитка квадрат",
+        },
+      ],
+    },
+  },
+  {
+    id: "11",
+    name: "Плитка Ласточкин хвост",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09640.jpg",
+      alt: "main",
+    },
+    subCatalogId: "4",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09640.jpg",
+          alt: "Плитка ласточкин хвост",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09646.jpg",
+          alt: "Плитка ласточкин хвост",
+        },
+        {
           src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09638.jpg",
-          alt: "Плитка ласточкин хвост",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09640.png",
-          alt: "Плитка ласточкин хвост",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09646.png",
-          alt: "Плитка ласточкин хвост",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09649.png",
-          alt: "Плитка ласточкин хвост",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09658.jpg",
-          alt: "Плитка ласточкин хвост",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09666.png",
           alt: "Плитка ласточкин хвост",
         },
       ],
     },
   },
   {
-    id: "5",
-    name: "Плитка прямоугольник",
+    id: "12",
+    name: "Плитка Ласточкин хвост",
     description: descCatalog1,
     imageMain: {
-      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09512.png",
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09649.jpg",
       alt: "main",
     },
-    catalogId: "1",
+    subCatalogId: "4",
     availability: true,
     textures: [],
     characteristics: [],
@@ -164,7 +374,67 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09499.png",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09649.jpg",
+          alt: "Плитка ласточкин хвост",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09655.jpg",
+          alt: "Плитка ласточкин хвост",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09658.jpg",
+          alt: "Плитка ласточкин хвост",
+        },
+      ],
+    },
+  },
+  {
+    id: "13",
+    name: "Плитка Ласточкин хвост",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09661.png",
+      alt: "main",
+    },
+    subCatalogId: "4",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09661.png",
+          alt: "Плитка ласточкин хвост",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09666.png",
+          alt: "Плитка ласточкин хвост",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaLastochkinHvost/BUI09669.png",
+          alt: "Плитка ласточкин хвост",
+        },
+      ],
+    },
+  },
+  {
+    id: "14",
+    name: "Плитка прямоугольник",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09499.jpg",
+      alt: "main",
+    },
+    subCatalogId: "5",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09499.jpg",
           alt: "Плитка прямоугольник",
         },
         {
@@ -173,6 +443,28 @@ export const products: ProductsType[] = [
         },
         {
           src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09506.png",
+          alt: "Плитка прямоугольник",
+        },
+      ],
+    },
+  },
+  {
+    id: "15",
+    name: "Плитка прямоугольник",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09511.jpg",
+      alt: "main",
+    },
+    subCatalogId: "5",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09511.jpg",
           alt: "Плитка прямоугольник",
         },
         {
@@ -187,14 +479,14 @@ export const products: ProductsType[] = [
     },
   },
   {
-    id: "6",
-    name: "Плитка Ромб",
+    id: "16",
+    name: "Плитка прямоугольник",
     description: descCatalog1,
     imageMain: {
-      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/Серая.png",
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09517.jpg",
       alt: "main",
     },
-    catalogId: "1",
+    subCatalogId: "5",
     availability: true,
     textures: [],
     characteristics: [],
@@ -202,34 +494,322 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI09613.png",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09517.jpg",
+          alt: "Плитка прямоугольник",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09517.jpg",
+          alt: "Плитка прямоугольник",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaPryamoUgolnik/BUI09518.jpg",
+          alt: "Плитка прямоугольник",
+        },
+      ],
+    },
+  },
+  {
+    id: "17",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/1.jpg",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/1.jpg",
           alt: "PlitkaRomb",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/Антроцыт2.jpg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/2.jpg",
           alt: "PlitkaRomb",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/Крошка Белый брамор.png",
-          alt: "PlitkaRomb",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/Микс.jpeg",
-          alt: "PlitkaRomb",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/Серая.png",
-          alt: "PlitkaRomb",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/Шахмотка с змеивеком2.jpeg",
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
           alt: "PlitkaRomb",
         },
       ],
     },
   },
   {
-    id: "7",
+    id: "18",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/1.jpg",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/1.jpg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/2.jpg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "19",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/4.jpeg",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/4.jpeg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/3.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "20",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/5.png",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/5.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/6.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "21",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/10.png",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/10.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/9.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "22",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/12.png",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/12.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/11.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "23",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/14.jpeg",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/14.jpeg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/13.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "24",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/16.jpeg",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/16.jpeg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/15.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "25",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI03199.jpeg",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI03199.jpeg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI03197.jpeg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "26",
+    name: "Плитка Ромб",
+    description: descCatalog1,
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI09616.jpg",
+      alt: "main",
+    },
+    subCatalogId: "6",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI09616.jpg",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI09613.png",
+          alt: "PlitkaRomb",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/mics.jpeg",
+          alt: "PlitkaRomb",
+        },
+      ],
+    },
+  },
+  {
+    id: "27",
     name: "Бордюры",
     description:
       "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
@@ -237,7 +817,7 @@ export const products: ProductsType[] = [
       src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03490.jpg",
       alt: "main",
     },
-    catalogId: "1",
+    subCatalogId: "7",
     availability: true,
     textures: [],
     characteristics: [],
@@ -252,12 +832,31 @@ export const products: ProductsType[] = [
           src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03493.jpg",
           alt: "Bordyri",
         },
+      ],
+    },
+  },
+  {
+    id: "28",
+    name: "Бордюры",
+    description:
+      "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03499.jpg",
+      alt: "main",
+    },
+    subCatalogId: "7",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
         {
           src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03499.jpg",
           alt: "Bordyri",
         },
         {
-          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03508.png",
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03508.jpg",
           alt: "Bordyri",
         },
         {
@@ -268,7 +867,131 @@ export const products: ProductsType[] = [
     },
   },
   {
-    id: "8",
+    id: "29",
+    name: "Бордюры",
+    description:
+      "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03516.jpg",
+      alt: "main",
+    },
+    subCatalogId: "7",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03516.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03521.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03523.jpeg",
+          alt: "Bordyri",
+        },
+      ],
+    },
+  },
+  {
+    id: "30",
+    name: "Бордюры",
+    description:
+      "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03530.jpg",
+      alt: "main",
+    },
+    subCatalogId: "7",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03530.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03533.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03537.jpeg",
+          alt: "Bordyri",
+        },
+      ],
+    },
+  },
+  {
+    id: "31",
+    name: "Бордюры",
+    description:
+      "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03541.jpg",
+      alt: "main",
+    },
+    subCatalogId: "7",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03541.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03546.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03549.jpeg",
+          alt: "Bordyri",
+        },
+      ],
+    },
+  },
+  {
+    id: "32",
+    name: "Бордюры",
+    description:
+      "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03553.jpg",
+      alt: "main",
+    },
+    subCatalogId: "7",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03553.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03558.jpg",
+          alt: "Bordyri",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Bordyri/BUI03561.jpeg",
+          alt: "Bordyri",
+        },
+      ],
+    },
+  },
+  {
+    id: "33",
     name: "Отливы",
     description:
       "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
@@ -276,8 +999,7 @@ export const products: ProductsType[] = [
       src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI03596.jpg",
       alt: "main",
     },
-
-    catalogId: "1",
+    subCatalogId: "8",
     availability: true,
     textures: [],
     characteristics: [],
@@ -296,6 +1018,25 @@ export const products: ProductsType[] = [
           src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI03599.jpeg",
           alt: "Otlivi",
         },
+      ],
+    },
+  },
+  {
+    id: "34",
+    name: "Отливы",
+    description:
+      "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI03602.png",
+      alt: "main",
+    },
+    subCatalogId: "8",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
         {
           src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI03602.png",
           alt: "Otlivi",
@@ -312,7 +1053,100 @@ export const products: ProductsType[] = [
     },
   },
   {
-    id: "9",
+    id: "35",
+    name: "Отливы",
+    description:
+      "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09567.jpg",
+      alt: "main",
+    },
+    subCatalogId: "8",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09567.jpg",
+          alt: "Otlivi",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09569.jpg",
+          alt: "Otlivi",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09573.jpg",
+          alt: "Otlivi",
+        },
+      ],
+    },
+  },
+  {
+    id: "36",
+    name: "Отливы",
+    description:
+      "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09582.jpg",
+      alt: "main",
+    },
+    subCatalogId: "8",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09582.jpg",
+          alt: "Otlivi",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09584.jpg",
+          alt: "Otlivi",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09588.jpg",
+          alt: "Otlivi",
+        },
+      ],
+    },
+  },
+  {
+    id: "37",
+    name: "Отливы",
+    description:
+      "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09594.jpg",
+      alt: "main",
+    },
+    subCatalogId: "8",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09594.jpg",
+          alt: "Otlivi",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09597.jpg",
+          alt: "Otlivi",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Sidewalk/Otlivi/BUI09603.jpg",
+          alt: "Otlivi",
+        },
+      ],
+    },
+  },
+  {
+    id: "38",
     name: "Навершие",
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
@@ -320,7 +1154,7 @@ export const products: ProductsType[] = [
       src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09705.jpg",
       alt: "main",
     },
-    catalogId: "2",
+    subCatalogId: "9",
     availability: true,
     textures: [],
     characteristics: [],
@@ -339,27 +1173,19 @@ export const products: ProductsType[] = [
           src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09712.jpg",
           alt: "Navershie",
         },
-        {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09749.png",
-          alt: "Navershie",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
-          alt: "Navershie",
-        },
       ],
     },
   },
   {
-    id: "10",
-    name: "Навершие парапета",
+    id: "39",
+    name: "Навершие",
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09725.jpg",
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
       alt: "main",
     },
-    catalogId: "2",
+    subCatalogId: "9",
     availability: true,
     textures: [],
     characteristics: [],
@@ -367,13 +1193,191 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09725.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09794.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09792.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "40",
+    name: "Навершие",
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09898.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09898.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09900.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09902.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "41",
+    name: "Навершие парапета",
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09672.jpg",
+      alt: "main",
+    },
+    subCatalogId: "10",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09672.jpg",
           alt: "NavershieParapeta",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09726.jpg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09674.jpg",
           alt: "NavershieParapeta",
         },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09675.jpg",
+          alt: "NavershieParapeta",
+        },
+      ],
+    },
+  },
+  {
+    id: "42",
+    name: "Навершие парапета",
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09681.jpg",
+      alt: "main",
+    },
+    subCatalogId: "10",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09681.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09683.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09685.jpg",
+          alt: "NavershieParapeta",
+        },
+      ],
+    },
+  },
+  {
+    id: "43",
+    name: "Навершие парапета",
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09695.jpg",
+      alt: "main",
+    },
+    subCatalogId: "10",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09695.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09699.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09701.jpg",
+          alt: "NavershieParapeta",
+        },
+      ],
+    },
+  },
+  {
+    id: "44",
+    name: "Навершие парапета",
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09714.jpg",
+      alt: "main",
+    },
+    subCatalogId: "10",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09714.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09716.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09718.jpg",
+          alt: "NavershieParapeta",
+        },
+      ],
+    },
+  },
+  {
+    id: "45",
+    name: "Навершие парапета",
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09731.jpg",
+      alt: "main",
+    },
+    subCatalogId: "10",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
         {
           src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09731.jpg",
           alt: "NavershieParapeta",
@@ -382,23 +1386,19 @@ export const products: ProductsType[] = [
           src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09733.jpg",
           alt: "NavershieParapeta",
         },
-        {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
-          alt: "NavershieParapeta",
-        },
       ],
     },
   },
   {
-    id: "11",
-    name: "Столбовой блок",
+    id: "46",
+    name: "Навершие парапета",
     description:
-      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09741.jpg",
       alt: "main",
     },
-    catalogId: "2",
+    subCatalogId: "10",
     availability: true,
     textures: [],
     characteristics: [],
@@ -406,11 +1406,244 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09741.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09743.png",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09749.jpg",
+          alt: "NavershieParapeta",
+        },
+      ],
+    },
+  },
+  {
+    id: "47",
+    name: "Навершие парапета",
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09889.jpg",
+      alt: "main",
+    },
+    subCatalogId: "10",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09889.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09892.jpg",
+          alt: "NavershieParapeta",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09893.jpg",
+          alt: "NavershieParapeta",
+        },
+      ],
+    },
+  },
+  {
+    id: "48",
+    name: "Столбовой блок",
+    description:
+      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI00002.jpg",
+      alt: "main",
+    },
+    subCatalogId: "11",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI00002.jpg",
           alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09873.png",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI00009.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI00004.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "49",
+    name: "Столбовой блок",
+    description:
+      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09798.jpg",
+      alt: "main",
+    },
+    subCatalogId: "11",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09798.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09804.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09808.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "50",
+    name: "Столбовой блок",
+    description:
+      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09824.jpg",
+      alt: "main",
+    },
+    subCatalogId: "11",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09824.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09826.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09828.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "51",
+    name: "Столбовой блок",
+    description:
+      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09850.png",
+      alt: "main",
+    },
+    subCatalogId: "11",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09850.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09858.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "52",
+    name: "Столбовой блок",
+    description:
+      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09861.png",
+      alt: "main",
+    },
+    subCatalogId: "11",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09861.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09864.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09865.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "53",
+    name: "Столбовой блок",
+    description:
+      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09872.jpg",
+      alt: "main",
+    },
+    subCatalogId: "11",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09872.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09873.jpg",
           alt: "Столбовой блок",
         },
         {
@@ -418,22 +1651,22 @@ export const products: ProductsType[] = [
           alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09878.jpg",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
           alt: "Столбовой блок",
         },
       ],
     },
   },
   {
-    id: "12",
-    name: "Стеновой блок",
+    id: "54",
+    name: "Столбовой блок",
     description:
-      "Стеновой блок – прочный и долговечный материал для строительства стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже и устойчив к климатическим воздействиям. Подходит для жилых и коммерческих объектов.",
+      "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03747.jpg",
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09878.jpg",
       alt: "main",
     },
-    catalogId: "3",
+    subCatalogId: "11",
     availability: true,
     textures: [],
     characteristics: [],
@@ -441,26 +1674,26 @@ export const products: ProductsType[] = [
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03747.jpg",
-          alt: "Стеновой блок",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09878.jpg",
+          alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03752.jpg",
-          alt: "Стеновой блок",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09882.jpg",
+          alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09912.png",
-          alt: "Стеновой блок",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09883.jpg",
+          alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09917.png",
-          alt: "Стеновой блок",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI03649.jpeg",
+          alt: "Столбовой блок",
         },
       ],
     },
   },
   {
-    id: "13",
+    id: "55",
     name: "Облицовка",
     description:
       "Облицовка – это декоративный и защитный элемент, предназначенный для отделки стен и фасадов. Она улучшает эстетические свойства здания, защищает поверхности от воздействия окружающей среды и повышает их долговечность. Облицовочные материалы изготавливаются из камня, керамики, бетона или композитов, что позволяет выбрать подходящий вариант для любого архитектурного стиля.",
@@ -468,7 +1701,7 @@ export const products: ProductsType[] = [
       src: "/assets/main/projects/catalogs/Wall/Oblitsovka/BUI03477.jpg",
       alt: "main",
     },
-    catalogId: "3",
+    subCatalogId: "13",
     availability: true,
     textures: [],
     characteristics: [],
@@ -490,198 +1723,182 @@ export const products: ProductsType[] = [
       ],
     },
   },
+  {
+    id: "56",
+    name: "Стеновой блок",
+    description:
+      "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03747.jpg",
+      alt: "main",
+    },
+    subCatalogId: "12",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03747.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI03752.jpg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "57",
+    name: "Стеновой блок",
+    description:
+      "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09912.png",
+      alt: "main",
+    },
+    subCatalogId: "12",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09912.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09917.jpg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "58",
+    name: "Стеновой блок",
+    description:
+      "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09919.jpg",
+      alt: "main",
+    },
+    subCatalogId: "12",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09919.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09923.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09928.jpg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "59",
+    name: "Стеновой блок",
+    description:
+      "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09955.jpg",
+      alt: "main",
+    },
+    subCatalogId: "12",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09955.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09963.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09967.jpg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "60",
+    name: "Стеновой блок",
+    description:
+      "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09975.png",
+      alt: "main",
+    },
+    subCatalogId: "12",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09975.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09978.jpg",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09985.jpg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "60",
+    name: "Стеновой блок",
+    description:
+      "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09987.png",
+      alt: "main",
+    },
+    subCatalogId: "12",
+    availability: true,
+    textures: [],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09987.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09991.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09996.jpg",
+          alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
 ];
-
-//
-// {
-//   id: "2",
-//     name: "Блок столбовой",
-//   availability: true,
-//   imageMain: {
-//   src: "",
-//     alt: "Блок столбовой",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[6], forms[7]],
-//   catalogId: "2",
-// },
-// {
-//   id: "3",
-//     name: "Navershie блока столбового",
-//   availability: true,
-//   imageMain: {
-//   src: "",
-//     alt: "Navershie блока столбового",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[8], forms[9]],
-//   catalogId: "2",
-// },
-// {
-//   id: "4",
-//     name: "Блок стеновой",
-//   availability: true,
-//   imageMain: {
-//   src: "",
-//     alt: "Блок стеновой",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[10]],
-//   catalogId: "2",
-// },
-// {
-//   id: "5",
-//     name: "Navershie блока стенового",
-//   availability: true,
-//   imageMain: {
-//   src: "",
-//     alt: "Navershie блока стенового",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[11]],
-//   catalogId: "2",
-// },
-// {
-//   id: "6",
-//     name: "Плитка тротуарная",
-//   availability: true,
-//   imageMain: {
-//   src: "",
-//     alt: "Плитка тротуарная",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[0], forms[3], forms[1]],
-//   catalogId: "3",
-// },
-// {
-//   id: "7",
-//     name: "Брусчатка",
-//   availability: true,
-//   imageMain: {
-//   src: "/assets/main/projects/catalogMain2.png",
-//     alt: "Брусчатка",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[2]],
-//   catalogId: "3",
-// },
-// {
-//   id: "8",
-//     name: "Бордюр",
-//   availability: true,
-//   imageMain: {
-//   src: "/assets/main/projects/catalogMain2.png",
-//     alt: "Бордюр",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[4]],
-//   catalogId: "3",
-// },
-// {
-//   id: "9",
-//     name: "Водоотлив",
-//   availability: true,
-//   imageMain: {
-//   src: "/assets/main/projects/catalogMain2.png",
-//     alt: "Водоотлив",
-// },
-//   description: "",
-//     // gallery: ;
-//     // characteristics: CharacteristicType[],
-//     // compounds: CompoundType[],
-//     textures: [
-//   textures[0],
-//   textures[1],
-//   textures[2],
-//   textures[3],
-//   textures[4],
-//   textures[5],
-//   textures[6],
-// ],
-//   forms: [forms[5]],
-//   catalogId: "3",
-// },

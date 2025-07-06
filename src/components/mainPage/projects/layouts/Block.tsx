@@ -49,6 +49,7 @@ export default function Block({
             alt={imageAlt}
             width={availability ? 364 : 100}
             height={availability ? 268 : 100}
+            priority
           />
           {!availability && (
             <p>

@@ -1,7 +1,7 @@
 "use client";
 import "./cart.scss";
 import "@/styles/main.scss";
-import "../../(pages)/catalog/[catalogId]/product/[productId]/advert.scss";
+import "@/app/(pages)/catalog/[catalogId]/products-catalog/[productsCatalogId]/product/[productId]/advert.scss";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
