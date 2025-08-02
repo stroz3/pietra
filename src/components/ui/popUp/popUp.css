@@ -37,6 +37,8 @@
 .popUp__block {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 .popUp__block:first-child {
   padding: 20px 0px 20px 20px;
@@ -67,6 +69,20 @@
 .popUp__img img {
   border-radius: 35px;
   object-fit: cover;
+}
+
+.popUp__success {
+  text-align: center;
+  padding: 20px;
+}
+
+.popUp__success h2 {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.popUp__success p {
+  color: #333;
 }
 
 @media (max-width: 1000px) {

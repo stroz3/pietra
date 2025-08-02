@@ -95,7 +95,7 @@ export const productSubCatalog: ProductSubCatalogType[] = [
     id: "10",
     name: "Навершие парапета",
     image: {
-      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09695.jpg",
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09716.jpg",
       alt: "main",
     },
     availability: true,

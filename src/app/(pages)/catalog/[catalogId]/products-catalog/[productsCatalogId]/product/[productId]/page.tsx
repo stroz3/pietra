@@ -13,6 +13,7 @@ import { products } from "@/data/products";
 import { textures } from "@/data/textures";
 import { useStoreCart } from "@/store/store";
 import { textureFormType } from "@/types/productsType";
+import { animatePrice } from "@/utils/animatePrice/animatePrice";
 import formatNumber from "@/utils/formatNumber/formatNumber";
 import checkLastId from "@/utils/localStore/checkLastId";
 
@@ -47,8 +48,8 @@ export default function Product({ params }: Product) {
   const setFactures = useStoreCart((state) => state.updateFactures);
   const addToCart = useStoreCart((state) => state.addToCart);
   const product = products.find((el) => el.id === productId);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [totalPrice, setTotalPrice] = useState<number>(0);
+
+  const [, setTotalPrice] = useState<number>(0);
   const [displayPrice, setDisplayPrice] = useState<number>(0);
 
   useEffect(() => {
@@ -112,8 +113,7 @@ export default function Product({ params }: Product) {
       }
     });
     const caption =
-      product?.forms?.map((el) => el).find((el) => el.name === value)
-        ?.caption ?? "";
+      product?.forms?.find((el) => el.name === value)?.caption ?? "";
     setCartForm((prevCartForm) => {
       const { formsId } = prevCartForm;
       if (formsId.includes(caption)) {
@@ -161,24 +161,8 @@ export default function Product({ params }: Product) {
   useEffect(() => {
     const price = calculateTotalPrice(cartForm);
     setTotalPrice(price);
-    animatePrice(price);
+    animatePrice(price, setDisplayPrice);
   }, [cartForm]);
-
-  function animatePrice(targetPrice: number) {
-    let startPrice = 0;
-    const duration = 500; // Общая продолжительность анимации (в миллисекундах)
-    const steps = Math.ceil(duration / 30); // Количество шагов (каждые 30 мс)
-    const increment = Math.ceil(targetPrice / steps); // Изменение цены за один шаг
-
-    const interval = setInterval(() => {
-      startPrice += increment;
-      if (startPrice >= targetPrice) {
-        startPrice = targetPrice; // Убедитесь, что мы не превышаем целевую цену
-        clearInterval(interval); // Останавливаем интервал
-      }
-      setDisplayPrice(startPrice); // Обновляем отображаемую цену
-    }, 30); // Обновляем каждые 30 мс
-  }
 
   function handleClickAddToCart() {
     const formsForCart = forms.filter((form) =>

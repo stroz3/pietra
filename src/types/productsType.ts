@@ -61,6 +61,7 @@ export interface textureFormType {
   curb?: formsTexturePricesType;
   drain?: formsTexturePricesType;
   pillarBlock300x300?: formsTexturePricesType;
+  pillarBlock350x350?: formsTexturePricesType;
   pillarBlock400x400?: formsTexturePricesType;
   capPillarBlock400x400?: formsTexturePricesType;
   capPillarBlock?: formsTexturePricesType;

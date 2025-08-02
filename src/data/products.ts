@@ -1,3 +1,5 @@
+import { forms } from "@/data/forms";
+import { textures } from "@/data/textures";
 import { ProductsType } from "@/types/productsType";
 
 const descCatalog1 =
@@ -7,6 +9,8 @@ export const products: ProductsType[] = [
   {
     id: "1",
     name: "Плитка брусчатка",
+    textures: [...textures],
+    forms: [forms[2]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03303.jpeg",
@@ -14,7 +18,6 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "1",
     availability: true,
-    textures: [],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -37,6 +40,7 @@ export const products: ProductsType[] = [
   {
     id: "2",
     name: "Плитка брусчатка",
+    forms: [forms[2]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03326.png",
@@ -44,7 +48,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "1",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -67,6 +71,7 @@ export const products: ProductsType[] = [
   {
     id: "3",
     name: "Плитка брусчатка",
+    forms: [forms[2]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI03309.png",
@@ -74,7 +79,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "1",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -97,6 +102,7 @@ export const products: ProductsType[] = [
   {
     id: "4",
     name: "Плитка брусчатка",
+    forms: [forms[2]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaBruschatka/BUI09931.png",
@@ -104,7 +110,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "1",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -127,6 +133,7 @@ export const products: ProductsType[] = [
   {
     id: "5",
     name: "Плитка Волна",
+    forms: [forms[3]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03807.jpg",
@@ -134,7 +141,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "2",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -157,6 +164,7 @@ export const products: ProductsType[] = [
   {
     id: "6",
     name: "Плитка Волна",
+    forms: [forms[3]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03816.jpg",
@@ -164,7 +172,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "2",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -187,6 +195,7 @@ export const products: ProductsType[] = [
   {
     id: "7",
     name: "Плитка Волна",
+    forms: [forms[3]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaVolna/BUI03812.jpg",
@@ -194,7 +203,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "2",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -217,6 +226,7 @@ export const products: ProductsType[] = [
   {
     id: "8",
     name: "Плитка квадрат",
+    forms: [forms[0]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09531.jpg",
@@ -224,7 +234,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "3",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -255,6 +265,7 @@ export const products: ProductsType[] = [
   {
     id: "9",
     name: "Плитка квадрат",
+    forms: [forms[0]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09542.jpg",
@@ -262,7 +273,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "3",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -293,6 +304,7 @@ export const products: ProductsType[] = [
   {
     id: "10",
     name: "Плитка квадрат",
+    forms: [forms[0]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaKvadrat/BUI09551.jpg",
@@ -300,7 +312,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "3",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -338,7 +350,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "4",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -368,7 +380,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "4",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -398,7 +410,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "4",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -428,7 +440,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "5",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -458,7 +470,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "5",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -488,7 +500,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "5",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -511,6 +523,7 @@ export const products: ProductsType[] = [
   {
     id: "17",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/1.jpg",
@@ -518,7 +531,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -541,6 +554,7 @@ export const products: ProductsType[] = [
   {
     id: "18",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/1.jpg",
@@ -548,7 +562,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -571,6 +585,7 @@ export const products: ProductsType[] = [
   {
     id: "19",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/4.jpeg",
@@ -578,7 +593,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -601,6 +616,7 @@ export const products: ProductsType[] = [
   {
     id: "20",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/5.png",
@@ -608,7 +624,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -631,6 +647,7 @@ export const products: ProductsType[] = [
   {
     id: "21",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/10.png",
@@ -638,7 +655,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -661,6 +678,7 @@ export const products: ProductsType[] = [
   {
     id: "22",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/12.png",
@@ -668,7 +686,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -691,6 +709,7 @@ export const products: ProductsType[] = [
   {
     id: "23",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/14.jpeg",
@@ -698,7 +717,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -721,6 +740,7 @@ export const products: ProductsType[] = [
   {
     id: "24",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/16.jpeg",
@@ -728,7 +748,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -751,6 +771,7 @@ export const products: ProductsType[] = [
   {
     id: "25",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI03199.jpeg",
@@ -758,7 +779,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -781,6 +802,7 @@ export const products: ProductsType[] = [
   {
     id: "26",
     name: "Плитка Ромб",
+    forms: [forms[1]],
     description: descCatalog1,
     imageMain: {
       src: "/assets/main/projects/catalogs/Sidewalk/Plitka/PlitkaRomb/BUI09616.jpg",
@@ -788,7 +810,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "6",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -811,6 +833,7 @@ export const products: ProductsType[] = [
   {
     id: "27",
     name: "Бордюры",
+    forms: [forms[4]],
     description:
       "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
     imageMain: {
@@ -819,7 +842,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "7",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -838,6 +861,7 @@ export const products: ProductsType[] = [
   {
     id: "28",
     name: "Бордюры",
+    forms: [forms[4]],
     description:
       "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
     imageMain: {
@@ -846,7 +870,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "7",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -869,6 +893,7 @@ export const products: ProductsType[] = [
   {
     id: "29",
     name: "Бордюры",
+    forms: [forms[4]],
     description:
       "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
     imageMain: {
@@ -877,7 +902,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "7",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -900,6 +925,7 @@ export const products: ProductsType[] = [
   {
     id: "30",
     name: "Бордюры",
+    forms: [forms[4]],
     description:
       "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
     imageMain: {
@@ -908,7 +934,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "7",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -931,6 +957,7 @@ export const products: ProductsType[] = [
   {
     id: "31",
     name: "Бордюры",
+    forms: [forms[4]],
     description:
       "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
     imageMain: {
@@ -939,7 +966,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "7",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -962,6 +989,7 @@ export const products: ProductsType[] = [
   {
     id: "32",
     name: "Бордюры",
+    forms: [forms[4]],
     description:
       "Бордюры — это декоративные и функциональные элементы, используемые для обрамления клумб, дорожек и газонов. Они помогают четко разграничивать зоны, предотвращают размывание грунта и придают участку аккуратный вид. Изготавливаются из различных материалов: бетона, камня, пластика, дерева и металла.",
     imageMain: {
@@ -970,7 +998,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "7",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -993,6 +1021,7 @@ export const products: ProductsType[] = [
   {
     id: "33",
     name: "Отливы",
+    forms: [forms[5]],
     description:
       "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
     imageMain: {
@@ -1001,7 +1030,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "8",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1024,6 +1053,7 @@ export const products: ProductsType[] = [
   {
     id: "34",
     name: "Отливы",
+    forms: [forms[5]],
     description:
       "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
     imageMain: {
@@ -1032,7 +1062,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "8",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1055,6 +1085,7 @@ export const products: ProductsType[] = [
   {
     id: "35",
     name: "Отливы",
+    forms: [forms[5]],
     description:
       "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
     imageMain: {
@@ -1063,7 +1094,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "8",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1086,6 +1117,7 @@ export const products: ProductsType[] = [
   {
     id: "36",
     name: "Отливы",
+    forms: [forms[5]],
     description:
       "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
     imageMain: {
@@ -1094,7 +1126,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "8",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1117,6 +1149,7 @@ export const products: ProductsType[] = [
   {
     id: "37",
     name: "Отливы",
+    forms: [forms[5]],
     description:
       "Отливы — это функциональные элементы, устанавливаемые на оконные и дверные проёмы снаружи здания. Они защищают стены от попадания дождевой воды, предотвращают её накопление на фасаде и обеспечивают отвод влаги. Изготавливаются из прочных материалов, устойчивых к погодным условиям, таких как алюминий, сталь, пластик или медь. Otlivi выполняют не только практическую, но и эстетическую функцию, придавая фасаду завершённый вид.",
     imageMain: {
@@ -1125,7 +1158,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "8",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1148,6 +1181,7 @@ export const products: ProductsType[] = [
   {
     id: "38",
     name: "Навершие",
+    forms: [forms[9], forms[8]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
@@ -1156,7 +1190,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "9",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1166,7 +1200,7 @@ export const products: ProductsType[] = [
           alt: "Navershie",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09708.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09708.png",
           alt: "Navershie",
         },
         {
@@ -1179,29 +1213,30 @@ export const products: ProductsType[] = [
   {
     id: "39",
     name: "Навершие",
+    forms: [forms[9], forms[8]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09749.png",
       alt: "main",
     },
     subCatalogId: "9",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09749.png",
           alt: "Navershie",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09794.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09753.png",
           alt: "Navershie",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09792.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09750.jpg",
           alt: "Navershie",
         },
       ],
@@ -1210,29 +1245,30 @@ export const products: ProductsType[] = [
   {
     id: "40",
     name: "Навершие",
+    forms: [forms[9], forms[8]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09898.jpg",
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09755.jpg",
       alt: "main",
     },
     subCatalogId: "9",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09898.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09755.jpg",
           alt: "Navershie",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09900.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09758.png",
           alt: "Navershie",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09902.jpg",
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09761.jpg",
           alt: "Navershie",
         },
       ],
@@ -1241,6 +1277,7 @@ export const products: ProductsType[] = [
   {
     id: "41",
     name: "Навершие парапета",
+    forms: [forms[11]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
@@ -1249,7 +1286,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "10",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1272,21 +1309,23 @@ export const products: ProductsType[] = [
   {
     id: "42",
     name: "Навершие парапета",
+    forms: [forms[11]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09681.jpg",
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09681.png",
       alt: "main",
     },
     subCatalogId: "10",
     availability: true,
-    textures: [],
+    textures: [...textures],
+
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09681.jpg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09681.png",
           alt: "NavershieParapeta",
         },
         {
@@ -1303,25 +1342,26 @@ export const products: ProductsType[] = [
   {
     id: "43",
     name: "Навершие парапета",
+    forms: [forms[11]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09695.jpg",
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09695.png",
       alt: "main",
     },
     subCatalogId: "10",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09695.jpg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09695.png",
           alt: "NavershieParapeta",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09699.jpg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09699.png",
           alt: "NavershieParapeta",
         },
         {
@@ -1334,21 +1374,22 @@ export const products: ProductsType[] = [
   {
     id: "44",
     name: "Навершие парапета",
+    forms: [forms[11]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09714.jpg",
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09714.png",
       alt: "main",
     },
     subCatalogId: "10",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09714.jpg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09714.png",
           alt: "NavershieParapeta",
         },
         {
@@ -1365,6 +1406,7 @@ export const products: ProductsType[] = [
   {
     id: "45",
     name: "Навершие парапета",
+    forms: [forms[11]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
@@ -1373,7 +1415,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "10",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1386,12 +1428,17 @@ export const products: ProductsType[] = [
           src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09733.jpg",
           alt: "NavershieParapeta",
         },
+        {
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09733.png",
+          alt: "NavershieParapeta",
+        },
       ],
     },
   },
   {
     id: "46",
     name: "Навершие парапета",
+    forms: [forms[11]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
@@ -1400,7 +1447,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "10",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1423,29 +1470,26 @@ export const products: ProductsType[] = [
   {
     id: "47",
     name: "Навершие парапета",
+    forms: [forms[11]],
     description:
       "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09889.jpg",
+      src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09889.png",
       alt: "main",
     },
     subCatalogId: "10",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09889.jpg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09889.png",
           alt: "NavershieParapeta",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09892.jpg",
-          alt: "NavershieParapeta",
-        },
-        {
-          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09893.jpg",
+          src: "/assets/main/projects/catalogs/Fences/NavershieParapeta/BUI09893.png",
           alt: "NavershieParapeta",
         },
       ],
@@ -1454,6 +1498,7 @@ export const products: ProductsType[] = [
   {
     id: "48",
     name: "Столбовой блок",
+    forms: [forms[6], forms[7], forms[12]],
     description:
       "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
@@ -1462,7 +1507,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "11",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1489,6 +1534,7 @@ export const products: ProductsType[] = [
   {
     id: "49",
     name: "Столбовой блок",
+    forms: [forms[6], forms[7], forms[12]],
     description:
       "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
@@ -1497,7 +1543,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "11",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1524,6 +1570,7 @@ export const products: ProductsType[] = [
   {
     id: "50",
     name: "Столбовой блок",
+    forms: [forms[6], forms[7], forms[12]],
     description:
       "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
@@ -1532,7 +1579,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "11",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1542,7 +1589,7 @@ export const products: ProductsType[] = [
           alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09826.png",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09826.jpg",
           alt: "Столбовой блок",
         },
         {
@@ -1559,6 +1606,7 @@ export const products: ProductsType[] = [
   {
     id: "51",
     name: "Столбовой блок",
+    forms: [forms[6], forms[7], forms[12]],
     description:
       "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
@@ -1567,13 +1615,17 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "11",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
           src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09850.png",
+          alt: "Столбовой блок",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09855.png",
           alt: "Столбовой блок",
         },
         {
@@ -1590,6 +1642,7 @@ export const products: ProductsType[] = [
   {
     id: "52",
     name: "Столбовой блок",
+    forms: [forms[6], forms[7], forms[12]],
     description:
       "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
@@ -1598,7 +1651,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "11",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1612,7 +1665,7 @@ export const products: ProductsType[] = [
           alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09865.jpg",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09865.png",
           alt: "Столбовой блок",
         },
         {
@@ -1625,21 +1678,22 @@ export const products: ProductsType[] = [
   {
     id: "53",
     name: "Столбовой блок",
+    forms: [forms[6], forms[7], forms[12]],
     description:
       "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
-      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09872.jpg",
+      src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09872.png",
       alt: "main",
     },
     subCatalogId: "11",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
       images: [
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09872.jpg",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09872.png",
           alt: "Столбовой блок",
         },
         {
@@ -1647,7 +1701,7 @@ export const products: ProductsType[] = [
           alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09877.jpg",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09877.png",
           alt: "Столбовой блок",
         },
         {
@@ -1660,6 +1714,7 @@ export const products: ProductsType[] = [
   {
     id: "54",
     name: "Столбовой блок",
+    forms: [forms[6], forms[7], forms[12]],
     description:
       "Столбовой блок — это универсальный строительный элемент, предназначенный для возведения прочных и долговечных колонн, ограждений и других конструкций. Отличается высокой устойчивостью к нагрузкам и погодным условиям. Благодаря современному дизайну и разнообразию текстур, столбовые блоки гармонично вписываются в любой архитектурный стиль, придавая объектам завершённый и эстетичный вид.",
     imageMain: {
@@ -1668,7 +1723,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "11",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1678,11 +1733,11 @@ export const products: ProductsType[] = [
           alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09882.jpg",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09882.png",
           alt: "Столбовой блок",
         },
         {
-          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09883.jpg",
+          src: "/assets/main/projects/catalogs/Fences/StolbovoiBlok/BUI09886.png",
           alt: "Столбовой блок",
         },
         {
@@ -1703,7 +1758,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "13",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1726,6 +1781,7 @@ export const products: ProductsType[] = [
   {
     id: "56",
     name: "Стеновой блок",
+    forms: [forms[10]],
     description:
       "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
     imageMain: {
@@ -1734,7 +1790,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "12",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1753,6 +1809,7 @@ export const products: ProductsType[] = [
   {
     id: "57",
     name: "Стеновой блок",
+    forms: [forms[10]],
     description:
       "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
     imageMain: {
@@ -1761,7 +1818,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "12",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1780,6 +1837,7 @@ export const products: ProductsType[] = [
   {
     id: "58",
     name: "Стеновой блок",
+    forms: [forms[10]],
     description:
       "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
     imageMain: {
@@ -1788,7 +1846,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "12",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1811,6 +1869,7 @@ export const products: ProductsType[] = [
   {
     id: "59",
     name: "Стеновой блок",
+    forms: [forms[10]],
     description:
       "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
     imageMain: {
@@ -1819,7 +1878,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "12",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1842,6 +1901,7 @@ export const products: ProductsType[] = [
   {
     id: "60",
     name: "Стеновой блок",
+    forms: [forms[10]],
     description:
       "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
     imageMain: {
@@ -1850,7 +1910,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "12",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1871,8 +1931,9 @@ export const products: ProductsType[] = [
     },
   },
   {
-    id: "60",
+    id: "61",
     name: "Стеновой блок",
+    forms: [forms[10]],
     description:
       "Стеновой блок — прочный строительный материал для возведения внутренних и наружных стен. Обеспечивает тепло- и звукоизоляцию, прост в монтаже, подходит для быстрого и надёжного строительства.",
     imageMain: {
@@ -1881,7 +1942,7 @@ export const products: ProductsType[] = [
     },
     subCatalogId: "12",
     availability: true,
-    textures: [],
+    textures: [...textures],
     characteristics: [],
     compounds: [],
     gallery: {
@@ -1897,6 +1958,262 @@ export const products: ProductsType[] = [
         {
           src: "/assets/main/projects/catalogs/Wall/StenovoyBlok/BUI09996.jpg",
           alt: "Столбовой блок",
+        },
+      ],
+    },
+  },
+  {
+    id: "62",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09762.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09762.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09764.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09766.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "63",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09775.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09775.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09776.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09777.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "64",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09775.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09775.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09776.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09777.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "65",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09779.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09781.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09782.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "66",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09785.png",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09785.png",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09787.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09786.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "67",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09790.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09790.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09794.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09792.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "68",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09896.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09896.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09900.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09898.jpg",
+          alt: "Navershie",
+        },
+      ],
+    },
+  },
+  {
+    id: "69",
+    name: "Навершие",
+    forms: [forms[9], forms[8]],
+    description:
+      "Навершие — декоративный и защитный элемент, используемый для завершения колонн, столбов и заборов. Оно выполняет сразу две функции: защищает конструкцию от осадков, предотвращая разрушение материалов, и придаёт архитектурным сооружениям завершённый и эстетичный вид. Навершия изготавливаются из прочных и устойчивых к погодным условиям материалов, таких как бетон, металл или пластик, что обеспечивает их долговечность.",
+    imageMain: {
+      src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09902.jpg",
+      alt: "main",
+    },
+    subCatalogId: "9",
+    availability: true,
+    textures: [...textures],
+    characteristics: [],
+    compounds: [],
+    gallery: {
+      images: [
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09902.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09908.jpg",
+          alt: "Navershie",
+        },
+        {
+          src: "/assets/main/projects/catalogs/Fences/Navershie/BUI09904.png",
+          alt: "Navershie",
         },
       ],
     },

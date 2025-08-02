@@ -7,59 +7,63 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import Form from "@/components/form/Form";
-import { cartObjectType, useStoreCart } from "@/store/store";
+import { useStoreCart } from "@/store/store";
+import { animatePrice } from "@/utils/animatePrice/animatePrice";
 import formatNumber from "@/utils/formatNumber/formatNumber";
 
 export default function Cart() {
+  const cart = useStoreCart((state) => state.cart);
   const updateToCart = useStoreCart((state) => state.updateToCart);
-  const [newCartData, setNewCartData] = useState<cartObjectType[]>(
-    typeof window !== "undefined"
-      ? JSON.parse(localStorage.getItem("cart") || "[]")
-      : [],
-  );
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [, setTotalPrice] = useState(0);
   const [displayPrice, setDisplayPrice] = useState(0);
-  useEffect(() => {
-    updateToCart(newCartData);
-  }, [newCartData]);
+  const [showSuccess, setShowSuccess] = useState(false);
+
   const calculateTotalPrice = () => {
     let totalPrice = 0;
-    newCartData.forEach((el) => (totalPrice += el.price));
+    cart.forEach((el) => (totalPrice += el.price));
     return totalPrice;
   };
+
   useEffect(() => {
-    if (newCartData.length === 0) {
-      animatePrice(0);
+    if (cart.length === 0) {
+      animatePrice(0, setDisplayPrice);
     } else {
       const price = calculateTotalPrice();
       setTotalPrice(price);
-      animatePrice(price);
+      animatePrice(price, setDisplayPrice);
     }
-  }, [totalPrice, newCartData]);
+  }, [cart]);
+
+  useEffect(() => {
+    if (showSuccess) {
+      const timer = setTimeout(() => {
+        setShowSuccess(false);
+      }, 3000); // Скрыть сообщение через 3 секунды
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccess]);
 
   function onIncrease(id: number) {
-    setNewCartData((prevCartData) => {
-      return prevCartData.map((el) =>
+    updateToCart(
+      cart.map((el) =>
         el.id === id
           ? {
               ...el,
               count: el.count + 1,
-              price: (el.count + 1) * el.price,
+              price: (el.count + 1) * (el.price / el.count),
             }
           : el,
-      );
-    });
+      ),
+    );
   }
 
   function onDecrease(id: number) {
-    const findCart = newCartData.find((el) => el.id === id);
+    const findCart = cart.find((el) => el.id === id);
     if (findCart?.count === 1) {
-      setNewCartData((prevCartData) =>
-        prevCartData.filter((el) => el.id !== id),
-      );
+      updateToCart(cart.filter((el) => el.id !== id));
     } else {
-      setNewCartData((prevCartData) => {
-        return prevCartData.map((el) =>
+      updateToCart(
+        cart.map((el) =>
           el.id === id
             ? {
                 ...el,
@@ -67,25 +71,9 @@ export default function Cart() {
                 price: (el.count - 1) * (el.price / el.count),
               }
             : el,
-        );
-      });
+        ),
+      );
     }
-  }
-
-  function animatePrice(targetPrice: number) {
-    let startPrice = 0;
-    const duration = 500; // Общая продолжительность анимации (в миллисекундах)
-    const steps = Math.ceil(duration / 30); // Количество шагов (каждые 30 мс)
-    const increment = Math.ceil(targetPrice / steps); // Изменение цены за один шаг
-
-    const interval = setInterval(() => {
-      startPrice += increment;
-      if (startPrice >= targetPrice) {
-        startPrice = targetPrice; // Убедитесь, что мы не превышаем целевую цену
-        clearInterval(interval); // Останавливаем интервал
-      }
-      setDisplayPrice(startPrice); // Обновляем отображаемую цену
-    }, 30); // Обновляем каждые 30 мс
   }
 
   return (
@@ -96,7 +84,7 @@ export default function Cart() {
         </div>
         <div className="cart__wrapper">
           <div className="cart__blocks-facture">
-            {newCartData.map((el, index) => (
+            {cart.map((el, index) => (
               <PriceBlock
                 key={index}
                 countValue={el.count}
@@ -116,12 +104,28 @@ export default function Cart() {
             </div>
           </div>
           <div className="cart__block-form">
-            <h2>Заполните форму для оформления вашего заказа</h2>
-            <p>
-              А после оформления с вами для уточнения деталей свяжется наш
-              менеджер. Оставьте ваши контакты.
-            </p>
-            <Form classNameBtn={"btn-orange"} text={"Оформить заказ"} />
+            {showSuccess ? (
+              <div className="cart__success">
+                <h2>Успешно отправлено!</h2>
+                <p>
+                  Ваше сообщение успешно отправлено. Наш специалист свяжется с
+                  вами в течение часа.
+                </p>
+              </div>
+            ) : (
+              <>
+                <h2>Заполните форму для оформления вашего заказа</h2>
+                <p>
+                  А после оформления с вами для уточнения деталей свяжется наш
+                  менеджер. Оставьте ваши контакты.
+                </p>
+                <Form
+                  classNameBtn={"btn-orange"}
+                  text={"Оформить заказ"}
+                  onSuccess={() => setShowSuccess(true)}
+                />
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -148,8 +152,6 @@ function PriceBlock({
   onDecrease,
   id,
 }: PriceBlock) {
-  // const [count, setCount] = useState(countValue ?? 0);
-  // const [price, setPrice] = useState(priceValue ?? 0);
   return (
     <div className="advert__block-facture">
       <div className="advert__block-facture-image">
@@ -161,26 +163,18 @@ function PriceBlock({
           <div className="advert__block-facture-count">
             <button
               className={"advert__btn"}
-              onClick={() => {
-                onDecrease(id);
-              }}
+              onClick={() => onDecrease(id)}
               disabled={countValue === 0}
             >
               &#8212;
             </button>
             <p>{countValue + " шт."}</p>
-            <button
-              className={"advert__btn"}
-              onClick={() => {
-                onIncrease(id);
-                // setPrice((prev) => prev + (priceValue ?? 0));
-              }}
-            >
+            <button className={"advert__btn"} onClick={() => onIncrease(id)}>
               &#43;
             </button>
           </div>
           <div className="cart__block-price">
-            <p>{priceValue + " ₽"}</p>
+            <p>{formatNumber(priceValue ?? 0) + " ₽"}</p>
           </div>
         </div>
       </div>

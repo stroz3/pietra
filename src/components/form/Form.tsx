@@ -8,6 +8,7 @@ import { useMutation } from "react-query";
 import MaskedInput from "react-text-mask";
 
 import { cartObjectType } from "@/store/store";
+import { useStoreCart } from "@/store/store";
 import formatNumber from "@/utils/formatNumber/formatNumber";
 
 interface FormValues {
@@ -16,6 +17,8 @@ interface FormValues {
   email: string;
   question: string;
   products?: cartObjectType[];
+  policy: boolean;
+  consent: boolean;
 }
 
 type styleForButton = {
@@ -32,6 +35,7 @@ type Form = {
   classNameBtn?: classNameBtn;
   classNameForm?: classNameForm;
   text?: string;
+  onSuccess?: () => void;
 };
 
 const defaultStyleForForm: styleForForm = {
@@ -58,15 +62,17 @@ export default function Form({
   styleForForm,
   classNameBtn,
   classNameForm = "form-dark",
+  onSuccess,
 }: Form) {
-  const { mutate, isLoading } = useMutation(
+  const { mutate, isLoading, isSuccess } = useMutation(
     async (message: string): Promise<string> => {
       return await sendMessageToTelegram(message);
     },
     {},
   );
-  // const [isFormValid, setIsFormValid] = useState(false);
-  // const cart = useStoreCart((state) => state.cart);
+
+  const updateToCart = useStoreCart((state) => state.updateToCart);
+
   const [formValues, setFormValues] = useState<FormValues>({
     name: "",
     phone: "",
@@ -76,12 +82,23 @@ export default function Form({
       typeof window !== "undefined"
         ? (JSON.parse(localStorage.getItem("cart") || "[]") as any[])
         : [],
+    policy: true,
+    consent: true,
   });
+
   useEffect(() => {
     validate();
   }, [formValues]);
+
+  useEffect(() => {
+    if (isSuccess) {
+      updateToCart([]); // Clear the cart
+      onSuccess?.(); // Trigger success callback
+    }
+  }, [isSuccess, updateToCart, onSuccess]);
+
   const validate = () => {
-    const { name, phone, email, question } = formValues;
+    const { name, phone, email, policy, consent } = formValues;
 
     if (!name || name.length < 2) {
       return false;
@@ -91,23 +108,22 @@ export default function Form({
     if (!phone || !phoneRegex.test(phone)) {
       return false;
     }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailRegex.test(email)) {
       return false;
     }
-    if (!question || question.length < 2 || question.length > 255) {
-      return false;
-    }
 
-    return true;
+    return !(!policy || !consent);
   };
 
-  function changeValue(e: any) {
-    const { id, value } = e.target;
-    setFormValues({
-      ...formValues,
-      [id]: value,
-    });
+  function changeValue(e: React.ChangeEvent<HTMLInputElement>) {
+    const { id, value, type, checked } = e.target;
+    const newValue = type === "checkbox" ? Boolean(checked) : value;
+    setFormValues((prev) => ({
+      ...prev,
+      [id]: newValue,
+    }));
   }
 
   function handleSubmit(e: any) {
@@ -126,7 +142,7 @@ export default function Form({
 Имя: ${name}
 Телефон: ${phone}
 Почта: ${email}
-Сообщение: ${question}</blockquote>`;
+${question ? `Сообщение: ${question}` : ""}</blockquote>`;
 
     if (products?.length ?? 0 > 0) {
       message += `
@@ -167,7 +183,6 @@ export default function Form({
                 </b>
 `;
     }
-    // console.log(message);
     mutate(message);
   }
 
@@ -241,11 +256,11 @@ export default function Form({
           type="text"
           id="question"
           placeholder=" "
-          required
           onChange={(e) => changeValue(e)}
         />
         <label htmlFor="question">Опишите кратко ваш вопрос</label>
       </div>
+
       <button
         className={
           classNameBtn ? `btn ${classNameBtn} form__button` : "btn form__button"
@@ -256,8 +271,15 @@ export default function Form({
       >
         {isLoading ? "Отправляем..." : (text ?? "Получить консультацию")}
       </button>
+
       <div className="checkbox-container">
-        <input type="checkbox" id="policy" />
+        <input
+          type="checkbox"
+          id="policy"
+          checked={formValues.policy}
+          onChange={changeValue}
+          required
+        />
         <label htmlFor="policy">
           <span>
             <span>Я ознакомлен с&nbsp;</span>
@@ -269,7 +291,13 @@ export default function Form({
       </div>
 
       <div className="checkbox-container">
-        <input type="checkbox" id="consent" />
+        <input
+          type="checkbox"
+          id="consent"
+          checked={formValues.consent}
+          onChange={changeValue}
+          required
+        />
         <label htmlFor="consent">
           <span>Я даю согласие на обработку своих персональных данных</span>
         </label>
