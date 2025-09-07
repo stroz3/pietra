@@ -210,6 +210,47 @@
   display: none;
 }
 
+.change-facture-size {
+  position: fixed;
+  inset: 0; /* вместо left/top/bottom/right/margin:auto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* чтобы скрытый не ловил клики */
+  background-color: rgb(1, 1, 1, 0.5);
+
+  img {
+    z-index: 9999;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: scale(0.2);
+    transition: transform 0.5s ease;
+
+  }
+}
+
+.change-facture-size.show {
+  img {
+    transform: scale(1);
+  }
+
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.change-facture-size.hide {
+  img {
+    transform: scale(0.2);
+  }
+
+  opacity: 0;
+  pointer-events: none;
+}
+
 .checkbox-container .checkmark {
   width: 30px;
   height: 30px;

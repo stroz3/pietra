@@ -78,10 +78,6 @@ export default function Form({
     phone: "",
     email: "",
     question: "",
-    products:
-      typeof window !== "undefined"
-        ? (JSON.parse(localStorage.getItem("cart") || "[]") as any[])
-        : [],
     policy: true,
     consent: true,
   });
@@ -128,61 +124,62 @@ export default function Form({
 
   function handleSubmit(e: any) {
     e.preventDefault();
-    setFormValues({
-      ...formValues,
-      products:
-        typeof window !== "undefined"
-          ? (JSON.parse(localStorage.getItem("cart") || "[]") as any[])
-          : [],
-    });
-    const { name, phone, email, question, products } = formValues;
+
+    const products =
+      typeof window !== "undefined"
+        ? (JSON.parse(localStorage.getItem("cart") || "[]") as any[])
+        : [];
+
+    const { name, phone, email, question } = formValues;
     let message = `
        <b>Заказ:</b>
        <blockquote>
 Имя: ${name}
 Телефон: ${phone}
 Почта: ${email}
-${question ? `Сообщение: ${question}` : ""}</blockquote>`;
+${question ? `Сообщение: ${question}` : ""}
+`;
 
     if (products?.length ?? 0 > 0) {
       message += `
-
-<b>Корзина:</b>`;
+<b>Корзина:</b>
+`;
       let totalPrice = 0;
 
       products?.forEach((product) => {
         const { name, count, price, form, facture } = product;
-        totalPrice += count * price;
-
+        totalPrice += price;
         message += `
-        <blockquote>
 Название: ${name}
 Кол-во: ${count} шт
 Цена: ${formatNumber(price)} руб. 
 <b>Форма:</b>
-    ${form.map(
-      (el) => ` 
-           Название: ${el.name},
-           Размер: ${el.size}
-        `,
-    )} 
+${form
+  .map(
+    (el: any) => ` 
+    Название: ${el.name},
+    Размер: ${el.size}
+`,
+  )
+  .join("")} 
 <b>Фактура:</b>
-    ${facture?.map(
-      (el) => ` 
-           Название: ${el.name},
-           Кол-во: ${el.count} шт
-        `,
-    )} 
-
-</blockquote>`;
+${facture
+  ?.map(
+    (el: any) => ` 
+    Название: ${el.name},
+    Кол-во: ${el.count} шт
+`,
+  )
+  .join("")} 
+`;
       });
 
       message += `
-      <b>
-Итоговая цена: ${formatNumber(totalPrice)} руб.
-                </b>
+<b>Итоговая цена: ${formatNumber(totalPrice)} руб.</b>
 `;
     }
+    message += `</blockquote>`;
+
     mutate(message);
   }
 

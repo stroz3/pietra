@@ -314,11 +314,52 @@ function Facture({
   onIncrease: () => void;
   onDecrease: () => void;
 }) {
+  const [isBig, setIsBig] = useState(false);
+  const [currentSrc, setCurrentSrc] = useState(imgSrc);
+
+  const handleOpen = () => {
+    setCurrentSrc(imgSrc);
+    setIsBig(true);
+  };
+
+  const handleClose = () => {
+    setIsBig(false);
+  };
+
   return (
     <div className="advert__block-facture">
       <div className="advert__block-facture-image">
-        <Image src={imgSrc} alt={"image"} width={40} height={40} />
-        <p style={{}}>{name}</p>
+        <Image
+          src={imgSrc}
+          alt={name}
+          width={40}
+          height={40}
+          style={{
+            cursor: "pointer",
+          }}
+          onClick={handleOpen}
+        />
+
+        <div
+          className={`change-facture-size ${isBig ? "show" : "hide"}`}
+          onClick={handleClose}
+        >
+          <Image
+            src={currentSrc}
+            alt={name}
+            width={
+              typeof window !== "undefined" && window.innerWidth < 768
+                ? 250
+                : 450
+            }
+            height={
+              typeof window !== "undefined" && window.innerWidth < 768
+                ? 250
+                : 450
+            }
+          />
+        </div>
+        <p>{name}</p>
       </div>
       <div className="advert__block-facture-count">
         <button
